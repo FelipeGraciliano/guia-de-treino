@@ -393,6 +393,7 @@ body[data-active="sex"] .week-row[data-day="sex"]{background:var(--card2); box-s
 .progress-recent-item span{color:var(--ink-dim);}
 .progress-note{font-size:10px;color:var(--ink-faint);line-height:1.45;margin-top:10px;}
 @media(max-width:600px){.progress-stats{grid-template-columns:repeat(2,minmax(0,1fr));}.progress-days{gap:3px}.progress-day-bar{height:62px}.progress-title{font-size:16px}.progress-actions{display:grid;grid-template-columns:1fr 1fr}.progress-action{width:100%!important;box-sizing:border-box;}}
+.adv-tag{display:inline-block; margin-left:6px; padding:3px 6px; font-size:9.5px; font-weight:700; text-transform:uppercase; letter-spacing:.05em; border-radius:5px; background:rgba(224, 71, 46, 0.15); color:#e2472e; vertical-align:middle;}
 </style>
 </head>
 <body data-active="seg">
@@ -440,8 +441,11 @@ const PLANS = {
             { name:"Tríceps pulley com barra", scheme:"3×8–12", target:"Lateral / medial", alts:["Tríceps pulley com corda","Tríceps corda","Tríceps testa"] },
             { name:"Tríceps acima da cabeça na corda", scheme:"2×10–15", target:"Cabeça longa", alts:["Tríceps francês com halteres","Tríceps testa","Tríceps francês unilateral"] },
           ]},
-          { name: "Ombro lateral", total: "", exercises: [
-            { name:"Elevação lateral", scheme:"3×12–20", target:"Deltoide lateral", alts:["Elevação lateral na polia","Elevação lateral na máquina","Elevação lateral sentado"] },
+          { name: "Ombro lateral", total: "3 séries", exercises: [
+            { name:"Elevação lateral", scheme:"3×12–20", target:"Deltoide lateral", advanced: "🔥 Drop-set na última", alts:["Elevação lateral na polia","Elevação lateral na máquina","Elevação lateral sentado"] },
+          ]},
+          { name: "Panturrilhas", total: "4 séries", exercises: [
+            { name:"Panturrilha sentado", scheme:"4×12–20", target:"Sóleo (2ª frequência da semana)", alts:["Panturrilha em pé","Panturrilha no leg press"] },
           ]},
         ]
       },
@@ -476,11 +480,12 @@ const PLANS = {
           { name: "Quadríceps", total: "10 séries", exercises: [
             { name:"Agachamento livre", scheme:"4×6–10", target:"Quadríceps geral / força", alts:["Agachamento no Smith","Leg press 45°","Hack machine"] },
             { name:"Leg press 45°", scheme:"3×8–12", target:"Quadríceps geral", alts:["Hack machine","Agachamento livre","Hack machine (variação)"] },
-            { name:"Cadeira extensora", scheme:"3×10–15", target:"Quadríceps, definição", alts:["Agachamento búlgaro","Leg press unilateral (foco quadríceps)","Passada (afundo)"] },
+            { name:"Cadeira extensora", scheme:"3×10–15", target:"Quadríceps, definição", advanced: "🔥 Drop-set na última", alts:["Agachamento búlgaro","Leg press unilateral (foco quadríceps)","Passada (afundo)"] },
           ]},
-          { name: "Posterior", total: "6 séries", exercises: [
+          { name: "Posterior", total: "9 séries", exercises: [
             { name:"Stiff", scheme:"3×6–10", target:"Posterior de coxa, glúteo e lombar", alts:["Stiff com halteres","Good morning","Levantamento terra romeno com barra"] },
-            { name:"Mesa flexora", scheme:"3×8–12", target:"Posterior de coxa", alts:["Flexora em pé (unilateral)","Stiff com halteres","Cadeira flexora"] },
+            { name:"Mesa flexora", scheme:"3×8–12", target:"Posterior de coxa", advanced: "🔥 Pico de contração", alts:["Flexora em pé (unilateral)","Stiff com halteres","Cadeira flexora"] },
+            { name:"Cadeira flexora", scheme:"3×10–15", target:"Isolamento de posterior", advanced: "🔥 Rest-pause na última", alts:["Mesa flexora","Flexora em pé (unilateral)"] },
           ]},
           { name: "Glúteos", total: "", exercises: [
             { name:"Hip thrust", scheme:"3×8–12", target:"Agachamento + leg press + stiff já ajudam bastante", alts:["Elevação pélvica no chão","Cadeira abdutora","Agachamento sumô"] },
@@ -673,13 +678,13 @@ const PLANS = {
         note: "Peito e costas na mesma sessão, antagonistas trabalhando juntos.",
         groups: [
           { name: "Peito", total: "9 séries", split: [["Médio","ter",44],["Superior","seg",33],["Inferior","qua",23]], exercises: [
-            { name:"Supino reto com barra", scheme:"4×6–10", target:"Peitoral médio", alts:["Supino reto com halteres","Supino reto no Smith","Flexão de braço tradicional"] },
+            { name:"Supino reto com barra", scheme:"4×6–10", target:"Peitoral médio", advanced: "🔥 Bi-set com Remada", alts:["Supino reto com halteres","Supino reto no Smith","Flexão de braço tradicional"] },
             { name:"Supino inclinado com halteres", scheme:"3×8–12", target:"Peitoral superior", alts:["Supino inclinado na máquina","Supino inclinado no Smith","Flexão inclinada"] },
             { name:"Crossover na polia alta", scheme:"2×10–15", target:"Ênfase inferior", alts:["Crucifixo no Pec Deck","Flexão de braço com pés elevados","Supino neutro com halteres"] },
           ]},
           { name: "Costas", total: "11 séries", split: [["Largura","ter",64],["Espessura","seg",36]], exercises: [
+            { name:"Remada curvada", scheme:"4×6–10", target:"Espessura", advanced: "🔥 Bi-set com Supino", alts:["Remada cavalinho","Remada na máquina articulada","Remada unilateral com halter (serrote)"] },
             { name:"Puxada alta aberta", scheme:"4×6–10", target:"Largura / dorsal", alts:["Puxada na máquina articulada","Puxada supinada (pegada inversa)","Puxada alta neutra"] },
-            { name:"Remada curvada", scheme:"4×6–10", target:"Espessura", alts:["Remada cavalinho","Remada na máquina articulada","Remada unilateral com halter (serrote)"] },
             { name:"Puxada alta com triângulo", scheme:"3×8–12", target:"Largura, maior amplitude", alts:["Puxada supinada (pegada inversa)","Puxada na máquina articulada","Puxada alta neutra"] },
           ]},
           { name: "Trapézio", total: "3 séries", exercises: [
@@ -742,13 +747,13 @@ const PLANS = {
         note: "Mesma lógica de segunda, com ângulos diferentes.",
         groups: [
           { name: "Peito", total: "8 séries", split: [["Superior","seg",38],["Inferior","qua",38],["Médio","ter",24]], exercises: [
-            { name:"Supino inclinado na máquina", scheme:"3×8–12", target:"Superior", alts:["Supino inclinado com halteres","Supino inclinado no Smith","Flexão inclinada"] },
+            { name:"Supino inclinado na máquina", scheme:"3×8–12", target:"Superior", advanced: "🔥 Bi-set com Puxada", alts:["Supino inclinado com halteres","Supino inclinado no Smith","Flexão inclinada"] },
             { name:"Supino declinado ou mergulho assistido", scheme:"3×8–12", target:"Ênfase inferior", alts:["Flexão declinada","Crossover na polia baixa","Mergulho entre bancos"] },
             { name:"Pec Deck", scheme:"2×10–15", target:"Região média", alts:["Crucifixo com halteres","Crossover na polia média","Crossover na polia alta"] },
           ]},
           { name: "Costas", total: "9 séries", split: [["Espessura","seg",33],["Largura","ter",33],["Detalhe","qui",34]], exercises: [
+            { name:"Puxada supinada (pegada inversa)", scheme:"3×8–12", target:"Largura, ângulo diferente da segunda", advanced: "🔥 Bi-set com Supino Incl.", alts:["Puxada na máquina articulada","Puxada alta neutra","Puxada alta aberta"] },
             { name:"Remada cavalinho", scheme:"3×6–10", target:"Espessura", alts:["Remada curvada com barra","Remada na máquina articulada","Remada unilateral com halter (serrote)"] },
-            { name:"Puxada supinada (pegada inversa)", scheme:"3×8–12", target:"Largura, ângulo diferente da segunda", alts:["Puxada na máquina articulada","Puxada alta neutra","Puxada alta aberta"] },
             { name:"Remada baixa com triângulo", scheme:"3×8–12", target:"Romboides / trapézio médio", alts:["Remada baixa com barra reta","Remada na máquina articulada","Remada unilateral com halter (serrote)"] },
           ]},
           { name: "Trapézio", total: "2 séries", exercises: [
@@ -2151,7 +2156,7 @@ function renderDay(planKey, dayKey){
         <div class="ex-card" id="card-${id}">
           <div class="ex-top">
             <div>
-              <p class="ex-name" id="name-${id}">${activeVariant>0 ? '🔁 ' : ''}${variantNames[activeVariant]}</p>
+              <p class="ex-name" id="name-${id}">${activeVariant>0 ? '🔁 ' : ''}${variantNames[activeVariant]} ${ex.advanced ? `<span class="adv-tag">${ex.advanced}</span>` : ''}</p>
               ${ex.target ? `<p class="ex-target">${ex.target}</p>` : ''}
             </div>
             <div class="ex-scheme">${ex.scheme}</div>
