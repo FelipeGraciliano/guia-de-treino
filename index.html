@@ -402,11 +402,27 @@ body[data-active="sex"] .week-row[data-day="sex"]{background:var(--card2); box-s
 .progress-note{font-size:10px;color:var(--ink-faint);line-height:1.45;margin-top:10px;}
 @media(max-width:600px){.progress-stats{grid-template-columns:repeat(2,minmax(0,1fr));}.progress-days{gap:3px}.progress-day-bar{height:62px}.progress-title{font-size:16px}.progress-actions{display:grid;grid-template-columns:1fr 1fr}.progress-action{width:100%!important;box-sizing:border-box;}}
 .adv-tag{display:inline-block; margin-left:6px; padding:3px 6px; font-size:9.5px; font-weight:700; text-transform:uppercase; letter-spacing:.05em; border-radius:5px; background:rgba(224, 71, 46, 0.15); color:#e2472e; vertical-align:middle;}
+html.light-mode{
+  --bg:#f8fafc;
+  --card:rgba(255, 255, 255, 0.85);
+  --card2:rgba(241, 245, 249, 0.9);
+  --line:rgba(0, 0, 0, 0.1);
+  --ink:#0f172a;
+  --ink-dim:#475569;
+  --ink-faint:#64748b;
+  --seg-bg:rgba(239, 68, 68, 0.15);
+  --ter-bg:rgba(59, 130, 246, 0.15);
+  --qua-bg:rgba(34, 197, 94, 0.15);
+  --qui-bg:rgba(234, 179, 8, 0.15);
+  --sex-bg:rgba(168, 85, 247, 0.15);
+}
+.theme-toggle{position:absolute; top:24px; right:20px; background:transparent; border:none; color:var(--ink-dim); font-size:22px; cursor:pointer;}
 </style>
 </head>
 <body data-active="seg">
 
 <header>
+  <button id="themeToggle" class="theme-toggle" title="Alternar Modo Claro/Escuro">🌗</button>
   <p class="eyebrow">Programa de treino</p>
   <h1>Hipertrofia — 5 dias</h1>
   <p class="sub">Toque nos quadrados pra marcar as séries feitas</p>
@@ -428,6 +444,13 @@ body[data-active="sex"] .week-row[data-day="sex"]{background:var(--card2); box-s
 <main id="dayContainer"></main>
 
 <script>
+const themeToggle = document.getElementById('themeToggle');
+if(localStorage.getItem('theme') === 'light'){ document.documentElement.classList.add('light-mode'); }
+themeToggle.addEventListener('click', () => {
+  document.documentElement.classList.toggle('light-mode');
+  localStorage.setItem('theme', document.documentElement.classList.contains('light-mode') ? 'light' : 'dark');
+});
+
 const PLANS = {
   a: {
     label: "Plano A",
