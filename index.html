@@ -452,6 +452,100 @@ themeToggle.addEventListener('click', () => {
 });
 
 const PLANS = {
+  rec: {
+    label: "⭐ Felipe (Push/Pull)",
+    desc: "Plano sob medida para 90kg/1.68m: Push/Pull focado em proporções e pernas 1x (adaptação).", category:"A", tags:["RECOMENDADO","HIPERTROFIA","PUSH/PULL","PERNAS 1X"],
+    meta: { foco:"Hipertrofia com foco em atingir todas as porções (2x) de formas diferentes", frequencia:"5 dias: Upper 2x, Lower 1x", estilo:"Push/Pull (Push/Pull/Legs/Push/Pull)", fase:"Felipe - Adaptação e Hipertrofia" },
+    days: {
+      seg: {
+        label: "Segunda", color: "seg", title: "Push A — Peito Superior + Ombro Anterior",
+        note: "Treino de empurrar focado na parte alta do peitoral e desenvolvimento de ombros.",
+        groups: [
+          { name: "Peito", total: "7 séries", exercises: [
+            { name:"Supino inclinado com halteres", scheme:"4×8–12", target:"Peitoral superior", alts:["Supino inclinado na máquina","Supino inclinado no Smith"] },
+            { name:"Supino reto com barra", scheme:"3×6–10", target:"Peitoral médio/geral", alts:["Supino reto com halteres","Supino reto no Smith"] }
+          ]},
+          { name: "Ombros", total: "7 séries", exercises: [
+            { name:"Desenvolvimento militar com barra", scheme:"3×6–10", target:"Deltoide anterior", alts:["Desenvolvimento com halteres","Desenvolvimento Arnold"] },
+            { name:"Elevação lateral", scheme:"4×12–20", target:"Deltoide lateral", advanced: "🔥 Drop-set na última", alts:["Elevação lateral na polia","Elevação lateral na máquina"] }
+          ]},
+          { name: "Tríceps", total: "4 séries", exercises: [
+            { name:"Tríceps testa", scheme:"4×8–12", target:"Cabeça longa (alongamento)", alts:["Tríceps francês com halteres","Tríceps na polia acima da cabeça"] }
+          ]}
+        ]
+      },
+      ter: {
+        label: "Terça", color: "ter", title: "Pull A — Dorsal Largura + Bíceps",
+        note: "Treino de puxar focado em expandir as costas (dorsal) e isolar o bíceps.",
+        groups: [
+          { name: "Costas", total: "10 séries", exercises: [
+            { name:"Puxada alta aberta", scheme:"4×6–10", target:"Dorsal (Largura)", advanced: "🔥 Pico de contração", alts:["Puxada na máquina articulada","Puxada supinada"] },
+            { name:"Remada curvada", scheme:"3×8–12", target:"Espessura geral", alts:["Remada cavalinho","Remada na máquina articulada"] },
+            { name:"Pulldown unilateral na polia", scheme:"3×10–15", target:"Dorsal (isolamento)", alts:["Pullover na polia","Puxada unilateral na máquina"] }
+          ]},
+          { name: "Ombro Posterior", total: "3 séries", exercises: [
+            { name:"Crucifixo inverso", scheme:"3×12–20", target:"Deltoide posterior", alts:["Face pull na polia","Crucifixo inverso na máquina"] }
+          ]},
+          { name: "Bíceps", total: "5 séries", exercises: [
+            { name:"Rosca Scott", scheme:"3×8–12", target:"Bíceps (Cabeça curta)", alts:["Rosca Scott na polia","Rosca concentrada"] },
+            { name:"Rosca direta W", scheme:"2×6–10", target:"Massa geral", alts:["Rosca direta com barra reta","Rosca direta na polia"] }
+          ]}
+        ]
+      },
+      qua: {
+        label: "Quarta", color: "qua", title: "Legs — Adaptação",
+        note: "O único dia de perna da semana, feito para estimular tudo sem te destruir enquanto se adapta.",
+        groups: [
+          { name: "Quadríceps", total: "6 séries", exercises: [
+            { name:"Leg press 45°", scheme:"3×8–12", target:"Quadríceps geral", alts:["Agachamento livre","Hack machine"] },
+            { name:"Cadeira extensora", scheme:"3×10–15", target:"Quadríceps isolado", alts:["Agachamento búlgaro","Leg press unilateral"] }
+          ]},
+          { name: "Posteriores e Glúteos", total: "5 séries", exercises: [
+            { name:"Stiff", scheme:"3×8–12", target:"Posterior + Glúteo", alts:["Stiff com halteres","Levantamento terra romeno com barra"] },
+            { name:"Mesa flexora", scheme:"2×10–15", target:"Posterior isolado", alts:["Cadeira flexora","Flexora em pé (unilateral)"] }
+          ]},
+          { name: "Panturrilhas", total: "4 séries", exercises: [
+            { name:"Panturrilha no leg press", scheme:"4×12–20", target:"Gastrocnêmio", alts:["Panturrilha em pé","Panturrilha sentado"] }
+          ]}
+        ]
+      },
+      qui: {
+        label: "Quinta", color: "qui", title: "Push B — Peito Inferior + Tríceps Medial",
+        note: "Foco diferente no peito e tríceps em relação à segunda-feira.",
+        groups: [
+          { name: "Peito", total: "7 séries", exercises: [
+            { name:"Supino reto com halteres", scheme:"4×8–12", target:"Peitoral médio (amplitude)", alts:["Supino reto com barra","Supino reto no Smith"] },
+            { name:"Crossover na polia alta", scheme:"3×10–15", target:"Ênfase inferior", alts:["Pec Deck","Crucifixo declinado"] }
+          ]},
+          { name: "Ombros", total: "4 séries", exercises: [
+            { name:"Elevação lateral na polia", scheme:"4×12–20", target:"Deltoide lateral (tensão constante)", alts:["Elevação lateral com halteres","Elevação lateral sentado"] }
+          ]},
+          { name: "Tríceps", total: "5 séries", exercises: [
+            { name:"Tríceps pulley com barra", scheme:"3×8–12", target:"Lateral / medial", advanced: "🔥 Rest-pause na última", alts:["Tríceps pulley com corda","Tríceps testa"] },
+            { name:"Tríceps corda", scheme:"2×10–15", target:"Cabeça lateral (abertura)", alts:["Tríceps unilateral na polia","Tríceps francês"] }
+          ]}
+        ]
+      },
+      sex: {
+        label: "Sexta", color: "sex", title: "Pull B — Costas Espessura + Bíceps Longo",
+        note: "O foco aqui é deixar as costas densas (miolo das costas e trapézio) e trabalhar o braquial do braço.",
+        groups: [
+          { name: "Costas", total: "8 séries", exercises: [
+            { name:"Remada cavalinho", scheme:"3×6–10", target:"Espessura", alts:["Remada curvada com barra","Remada unilateral com halter (serrote)"] },
+            { name:"Remada baixa com triângulo", scheme:"3×8–12", target:"Romboides / Trapézio médio", alts:["Remada na máquina articulada","Remada baixa com barra reta"] },
+            { name:"Puxada alta com triângulo", scheme:"2×8–12", target:"Dorsal (amplitude)", alts:["Puxada supinada","Puxada alta neutra"] }
+          ]},
+          { name: "Trapézio", total: "4 séries", exercises: [
+            { name:"Encolhimento com halteres", scheme:"4×10–15", target:"Trapézio superior", alts:["Encolhimento com barra","Remada alta com barra"] }
+          ]},
+          { name: "Bíceps", total: "5 séries", exercises: [
+            { name:"Rosca inclinada", scheme:"3×8–12", target:"Cabeça longa (posição alongada)", alts:["Rosca alternada inclinada","Rosca direta W"] },
+            { name:"Rosca martelo", scheme:"2×10–15", target:"Braquial", alts:["Rosca martelo na polia com corda","Rosca Zottman"] }
+          ]}
+        ]
+      }
+    }
+  },
   a: {
     label: "Plano A",
     desc: "Cada grupo 2x/semana", category:"A", tags:["HIPERTROFIA","EQUILIBRADO","PERNAS 1X"],
