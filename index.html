@@ -461,9 +461,10 @@ const PLANS = {
         label: "Segunda", color: "seg", title: "Push A — Foco: Peito Superior + Ombro Lateral",
         note: "O volume por sessão aqui é menor (cerca de 20 séries totais). O segredo é INTENSIDADE (chegar perto da falha) e não quantidade. Descanse 90-120s.",
         groups: [
-          { name: "Peito", total: "7 séries", exercises: [
+          { name: "Peito", total: "10 séries", exercises: [
             { name:"Supino inclinado com halteres", scheme:"4×8–12", target:"Peitoral superior (ajuda na postura visual)", alts:["Supino inclinado na máquina"] },
-            { name:"Supino reto com barra", scheme:"3×6–10", target:"Peitoral médio/geral", alts:["Supino reto com halteres","Supino reto no Smith"] }
+            { name:"Supino reto com barra", scheme:"3×6–10", target:"Peitoral médio/geral", alts:["Supino reto com halteres","Supino reto no Smith"] },
+            { name:"Crossover na polia baixa (de baixo pra cima)", scheme:"3×10–15", target:"Corte superior e miolo do peito", advanced: "🔥 Drop-set na última", alts:["Crucifixo inclinado com halteres"] }
           ]},
           { name: "Ombros", total: "7 séries", exercises: [
             { name:"Desenvolvimento militar", scheme:"3×6–10", target:"Deltoide anterior", alts:["Desenvolvimento com halteres"] },
@@ -471,7 +472,7 @@ const PLANS = {
           ]},
           { name: "Tríceps", total: "6 séries", exercises: [
             { name:"Tríceps testa", scheme:"3×8–12", target:"Cabeça longa", alts:["Tríceps francês"] },
-            { name:"Tríceps pulley com corda", scheme:"3×10–15", target:"Lateral / medial", alts:["Tríceps barra reta na polia"] }
+            { name:"Tríceps pulley com corda", scheme:"3×10–15", target:"Lateral / medial", advanced: "🔥 Drop-set na última", alts:["Tríceps barra reta na polia"] }
           ]}
         ]
       },
@@ -488,7 +489,7 @@ const PLANS = {
             { name:"Crucifixo inverso", scheme:"3×12–15", target:"Deltoide posterior", alts:["Face pull na polia"] }
           ]},
           { name: "Bíceps", total: "6 séries", exercises: [
-            { name:"Rosca direta com barra/W", scheme:"3×8–10", target:"Massa geral", alts:["Rosca direta na polia"] },
+            { name:"Rosca direta com barra/W", scheme:"3×8–10", target:"Massa geral", advanced: "🔥 Drop-set na última", alts:["Rosca direta na polia"] },
             { name:"Rosca Scott", scheme:"3×10–12", target:"Bíceps (Cabeça curta)", advanced: "🔥 Rest-pause na última", alts:["Rosca concentrada"] }
           ]}
         ]
@@ -514,8 +515,9 @@ const PLANS = {
         label: "Quinta", color: "qui", title: "Push B — Foco: Peito Geral + Tríceps",
         note: "Treino um pouco mais curto (17 séries). Foco em preencher o meio do peito e queimar o tríceps.",
         groups: [
-          { name: "Peito", total: "7 séries", exercises: [
+          { name: "Peito", total: "10 séries", exercises: [
             { name:"Supino reto com halteres", scheme:"4×8–10", target:"Peitoral médio (amplitude máxima)", alts:["Supino reto com barra"] },
+            { name:"Mergulho nas paralelas ou Supino declinado", scheme:"3×8–12", target:"Corte inferior do peito (a linha de baixo)", alts:["Supino declinado na máquina"] },
             { name:"Crossover na polia alta", scheme:"3×10–15", target:"Ênfase inferior e miolo", advanced: "🔥 Rest-pause na última", alts:["Pec Deck"] }
           ]},
           { name: "Ombros", total: "4 séries", exercises: [
@@ -523,7 +525,7 @@ const PLANS = {
           ]},
           { name: "Tríceps", total: "6 séries", exercises: [
             { name:"Tríceps francês com halteres", scheme:"3×8–12", target:"Cabeça longa", alts:["Tríceps testa"] },
-            { name:"Tríceps pulley com barra", scheme:"3×10–12", target:"Lateral / medial", alts:["Tríceps pulley com corda"] }
+            { name:"Tríceps pulley com barra", scheme:"3×10–12", target:"Lateral / medial", advanced: "🔥 Rest-pause na última", alts:["Tríceps pulley com corda"] }
           ]}
         ]
       },
@@ -540,7 +542,7 @@ const PLANS = {
             { name:"Encolhimento com halteres", scheme:"3×10–15", target:"Trapézio superior", advanced: "🔥 Pico de contração de 2s", alts:["Encolhimento com barra"] }
           ]},
           { name: "Bíceps", total: "6 séries", exercises: [
-            { name:"Rosca inclinada", scheme:"3×8–12", target:"Cabeça longa (posição alongada)", alts:["Rosca alternada inclinada"] },
+            { name:"Rosca inclinada", scheme:"3×8–12", target:"Cabeça longa (posição alongada)", advanced: "🔥 Rest-pause na última", alts:["Rosca alternada inclinada"] },
             { name:"Rosca martelo", scheme:"3×10–12", target:"Braquial", advanced: "🔥 Drop-set na última", alts:["Rosca martelo na polia com corda"] }
           ]}
         ]
