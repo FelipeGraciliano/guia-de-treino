@@ -527,3 +527,232 @@ html.light-mode{
   margin: 0 auto;
   padding: 18px 16px 20px;
 }
+
+/* ===== BARRA DE AÇÕES RÁPIDAS (ZERO EMPILHAMENTO) ===== */
+.quick-toolbar {
+  max-width: 980px;
+  margin: 12px auto 14px;
+  padding: 0 12px;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.quick-btn {
+  flex: 1 1 calc(20% - 8px);
+  min-width: 140px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 11px 12px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  color: var(--ink);
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+.quick-btn:hover {
+  background: var(--card2);
+  border-color: var(--ink-faint);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+}
+.quick-btn:active {
+  transform: translateY(0);
+}
+.quick-diet-btn {
+  background: rgba(34, 197, 94, 0.12);
+  border-color: rgba(34, 197, 94, 0.4);
+  color: #22c55e;
+}
+.quick-diet-btn:hover {
+  background: rgba(34, 197, 94, 0.22);
+  border-color: #22c55e;
+  color: #22c55e;
+}
+@media (max-width: 680px) {
+  .quick-btn {
+    flex: 1 1 calc(50% - 6px);
+    min-width: 0;
+    padding: 10px 8px;
+    font-size: 11.5px;
+  }
+}
+
+/* ===== MODAL DIALOG OVERLAY (FLUIDO, ELEGANTE & ACESSÍVEL) ===== */
+.app-modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  background: rgba(6, 7, 10, 0.82);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.24s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.app-modal-overlay.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+.app-modal-card {
+  width: 100%;
+  max-width: 720px;
+  max-height: 88vh;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  box-shadow: 0 25px 65px rgba(0, 0, 0, 0.75), 0 0 0 1px rgba(255, 255, 255, 0.08);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transform: translateY(22px) scale(0.97);
+  transition: transform 0.26s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.app-modal-overlay.active .app-modal-card {
+  transform: translateY(0) scale(1);
+}
+.app-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  background: var(--card2);
+  border-bottom: 1px solid var(--line);
+  flex: 0 0 auto;
+}
+.app-modal-title-group {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.app-modal-badge {
+  font-size: 9.5px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+.app-modal-title {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--ink);
+  letter-spacing: -0.01em;
+}
+.app-modal-close-btn {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid var(--line);
+  color: var(--ink);
+  border-radius: 12px;
+  padding: 8px 14px;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+.app-modal-close-btn:hover {
+  background: #ef4444;
+  color: #fff;
+  border-color: #ef4444;
+}
+.app-modal-body {
+  padding: 20px;
+  overflow-y: auto;
+  flex: 1 1 auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--line) transparent;
+}
+.app-modal-body::-webkit-scrollbar {
+  width: 6px;
+}
+.app-modal-body::-webkit-scrollbar-thumb {
+  background: var(--line);
+  border-radius: 3px;
+}
+
+/* Painéis dentro do Modal — ajustados para visual limpo sem bordas redundantes */
+.app-modal-body .progress-panel,
+.app-modal-body .summary-panel,
+.app-modal-body .comparison-panel {
+  display: block !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* ===== EXERCISE CARD: COMO FAZER & 3 SUBSTITUTOS ===== */
+.ex-how-box {
+  margin-top: 10px;
+  padding: 12px 14px;
+  background: var(--card2);
+  border: 1px solid var(--line);
+  border-left: 3.5px solid #3b82f6;
+  border-radius: 12px;
+  font-size: 12px;
+  line-height: 1.55;
+  color: var(--ink-dim);
+}
+.ex-how-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #60a5fa;
+  margin-bottom: 6px;
+}
+.ex-how-text {
+  color: var(--ink);
+  font-size: 12px;
+  line-height: 1.55;
+}
+.ex-target-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 6px;
+  padding: 3px 8px;
+  background: rgba(59, 130, 246, 0.12);
+  border: 1px solid rgba(59, 130, 246, 0.3);
+  border-radius: 6px;
+  font-size: 11px;
+  color: #93c5fd;
+  line-height: 1.4;
+}
+
+/* Botões de Variação de Equipamento */
+.alt-badge-equip {
+  display: inline-block;
+  font-size: 9.5px;
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.1);
+  margin-right: 6px;
+  color: var(--ink-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.variant-pick.picked .alt-badge-equip {
+  background: rgba(59, 130, 246, 0.25);
+  color: #93c5fd;
+}

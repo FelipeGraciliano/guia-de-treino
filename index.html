@@ -25,20 +25,61 @@
 </header>
 
 <div class="cat-filter" id="catFilter"></div>
-<div class="library-tools"><input id="planSearch" class="plan-search" type="search" placeholder="🔎 Buscar estratégia, foco ou divisão…" autocomplete="off"><button class="summary-btn tool-btn" id="compareBtn">⚖️ Comparar planos</button></div>
+
+<div class="library-tools">
+  <input id="planSearch" class="plan-search" type="search" placeholder="🔎 Buscar estratégia, foco ou divisão…" autocomplete="off">
+</div>
+
 <div class="plan-switch" id="planSwitch"></div>
-<div class="comparison-panel" id="comparisonPanel"></div>
-<div class="library-note"><b>📚 Biblioteca de Estratégias</b><span>Escolha a estratégia que quer testar nesta fase. Os planos originais continuam aqui; os novos entram como variações.</span></div>
-<button class="summary-btn" id="summaryBtn">📊 Ver resumo de séries da semana</button>
-<button class="summary-btn" id="progressBtn">📈 Meu progresso</button>
-<button class="summary-btn" id="experimentBtn">🧪 Modo Experimento</button>
-<a href="dieta.html" class="summary-btn diet-summary-btn" style="text-align:center; text-decoration:none; display:block; border-color:rgba(34, 197, 94, 0.45); background:rgba(34, 197, 94, 0.1); font-weight:700; color:#22c55e;">🥗 Abrir Calculadora de Dieta & Déficit →</a>
+
+<!-- Barra de Ações Rápidas (Organizada, sem empilhamento) -->
+<div class="quick-toolbar">
+  <button class="quick-btn" id="progressBtn" type="button">
+    <span class="qbtn-icon">📈</span>
+    <span class="qbtn-label">Meu Progresso</span>
+  </button>
+  <button class="quick-btn" id="summaryBtn" type="button">
+    <span class="qbtn-icon">📊</span>
+    <span class="qbtn-label">Resumo de Séries</span>
+  </button>
+  <button class="quick-btn" id="compareBtn" type="button">
+    <span class="qbtn-icon">⚖️</span>
+    <span class="qbtn-label">Comparar Planos</span>
+  </button>
+  <button class="quick-btn" id="experimentBtn" type="button">
+    <span class="qbtn-icon">🧪</span>
+    <span class="qbtn-label">Modo Experimento</span>
+  </button>
+  <a href="dieta.html" class="quick-btn quick-diet-btn">
+    <span class="qbtn-icon">🥗</span>
+    <span class="qbtn-label">Dieta & Déficit →</span>
+  </a>
+</div>
+
+<!-- Painel de Estratégia do Plano Atual (Colapsável & Limpo) -->
 <div class="strategy-panel" id="strategyPanel"></div>
-<div class="progress-panel" id="progressPanel"></div>
-<div class="summary-panel" id="summaryPanel"></div>
-<div class="summary-panel" id="experimentPanel"></div>
+
+<!-- Navegação dos Dias da Semana -->
 <nav class="days" id="dayNav"></nav>
+
+<!-- Exercícios do Dia Selecionado -->
 <main id="dayContainer"></main>
+
+<!-- MODAL OVERLAY FLUIDO (Progresso, Séries, Comparador, Experimento) -->
+<div class="app-modal-overlay" id="appModalOverlay" aria-hidden="true">
+  <div class="app-modal-card" id="appModalCard" role="dialog" aria-modal="true">
+    <div class="app-modal-header">
+      <div class="app-modal-title-group">
+        <span class="app-modal-badge" id="appModalBadge">PAINEL</span>
+        <h3 class="app-modal-title" id="appModalTitle">Meu Progresso</h3>
+      </div>
+      <button class="app-modal-close-btn" id="appModalClose" type="button" aria-label="Fechar modal" title="Fechar (Esc)">✕ Fechar</button>
+    </div>
+    <div class="app-modal-body" id="appModalBody">
+      <!-- Conteúdo dinâmico injetado aqui sem empilhar na página -->
+    </div>
+  </div>
+</div>
 
 <script src="js/plans.js"></script>
 <script src="js/app.js"></script>
