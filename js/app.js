@@ -340,7 +340,7 @@ function renderDay(planKey, dayKey){
         <div class="ex-card" id="card-${id}">
           <div class="ex-top">
             <div>
-              <p class="ex-name" id="name-${id}">${activeVariant>0 ? '🔁 ' : ''}${currentName} ${ex.advanced ? `<span class="adv-tag">${ex.advanced}</span>` : ''}</p>
+              <p class="ex-name" id="name-${id}">${activeVariant>0 ? '🔁 ' : ''}${currentName} ${ex.advanced ? `<button type="button" class="adv-tag-btn" data-tech="${ex.advanced.replace(/"/g,'&quot;')}" title="Toque para entender esta técnica">${ex.advanced} ℹ️</button>` : ''}</p>
               <div class="ex-target-pill" id="target-${id}">🎯 ${currentDetails.target}</div>
             </div>
             <div class="ex-scheme">${ex.scheme}</div>
@@ -467,7 +467,13 @@ function renderDay(planKey, dayKey){
 
       // Atualiza nome exibido, foco, instruções e links
       const nameEl = document.getElementById('name-'+id);
-      nameEl.innerHTML = (variant>0 ? '🔁 ' : '') + varName;
+      nameEl.innerHTML = (variant>0 ? '🔁 ' : '') + varName + (ex.advanced ? ` <button type="button" class="adv-tag-btn" data-tech="${ex.advanced.replace(/"/g,'&quot;')}" title="Toque para entender esta técnica">${ex.advanced} ℹ️</button>` : '');
+      nameEl.querySelectorAll('.adv-tag-btn').forEach(b=>{
+        b.addEventListener('click', (ev)=>{
+          ev.stopPropagation();
+          openTechModal(b.dataset.tech);
+        });
+      });
       
       const targetEl = document.getElementById('target-'+id);
       if(targetEl) targetEl.innerHTML = '🎯 ' + details.target;
@@ -519,6 +525,13 @@ function renderDay(planKey, dayKey){
     updateProgress(planKey, dayKey);
     renderNav(planKey);
     showToast("Dia desmarcado");
+  });
+
+  panel.querySelectorAll('.adv-tag-btn').forEach(btn=>{
+    btn.addEventListener('click', (e)=>{
+      e.stopPropagation();
+      openTechModal(btn.dataset.tech);
+    });
   });
 
   updateProgress(planKey, dayKey);
@@ -955,6 +968,127 @@ if(experimentBtn){
   });
 }
 
+// ==== DICIONÁRIO E GLOSSÁRIO DE TÉCNICAS AVANÇADAS ====
+const ADVANCED_TECHNIQUES_INFO = {
+  "drop-set": {
+    badge: "EXAUSTÃO METABÓLICA",
+    title: "🔥 Drop-Set (Falha + Redução de Carga)",
+    what: "Técnica de alta intensidade onde você realiza a série normal até a falha, reduz a carga em cerca de 20% a 30% imediatamente (em menos de 5 segundos, sem descansar) e continua fazendo o máximo de repetições possíveis até uma nova falha.",
+    steps: [
+      "Execute a sua série com carga pesada até a falha técnica.",
+      "Sem descansar, reduza cerca de 20% a 30% do peso (mude o pino da máquina ou pegue halteres mais leves).",
+      "Continue o exercício imediatamente até não conseguir mais nenhuma repetição com boa postura.",
+      "(Opcional): Em drop-sets duplos, reduza mais uma vez e esgote totalmente o músculo."
+    ],
+    why: "Recruta as fibras musculares remanescentes de contração rápida que sobreviveram à primeira série, gerando alto estresse metabólico e volume efetivo em tempo recorde.",
+    note: "Use APENAS na última série do exercício indicado. Fazer em todas as séries destrói a sua recuperação do treino."
+  },
+  "rest-pause": {
+    badge: "ALTA TENSÃO MECÂNICA",
+    title: "🔥 Rest-Pause (Pausa Curta de Respiro)",
+    what: "Técnica onde você atinge a falha com uma carga pesada, descansa apenas 10 a 15 segundos respirando fundo, e volta com a MESMA carga pesada para arrancar mais 2 a 4 repetições extras.",
+    steps: [
+      "Execute a série pesada até a falha técnica (ex: 8 a 10 repetições).",
+      "Solte o peso e respire fundo contando de 10 a 15 segundos.",
+      "Pegue a MESMA carga pesada e faça mais 2 a 4 repetições com esforço máximo.",
+      "Descanse normalmente antes do próximo exercício."
+    ],
+    why: "Permite acumular repetições extras de altíssima tensão mecânica sem precisar diminuir o peso, estimulando grande hipertrofia miofibrilar.",
+    note: "Mantenha a coluna e a postura travadas. Não balance o corpo para 'roubar' na pausa."
+  },
+  "pico de contração": {
+    badge: "CONEXÃO MENTE-MÚSCULO",
+    title: "🔥 Pico de Contração (Pausa Isométrica no Topo)",
+    what: "Segurar a contração voluntária máxima por 1 a 2 segundos inteiros no ponto em que o músculo está completamente encurtado, antes de começar a descida.",
+    steps: [
+      "Puxe ou empurre o peso até o ponto de máxima contração (ex: topo da puxada alta ou da panturrilha).",
+      "Congele a carga por 1 a 2 segundos completos, espremendo o músculo com força voluntária máxima.",
+      "Inicie a fase excêntrica descendo de forma lenta e controlada (2 a 3 segundos)."
+    ],
+    why: "Elimina qualquer chance de embalo ou impulso do corpo ('roubo') e maximiza o recrutamento neuromuscular e densidade visual do músculo.",
+    note: "Se necessário, reduza levemente a carga para conseguir cravar a pausa de 2 segundos sem tremer a postura."
+  },
+  "segurar": {
+    badge: "CONTROLE ARTICULAR",
+    title: "🔥 Isometria no Ponto Final",
+    what: "Pausa consciente de 1 segundo no final do movimento para garantir controle motor e proteção articular.",
+    steps: [
+      "No final do percurso concêntrico, pare o movimento conscientemente por 1 segundo.",
+      "Sinta a contração pura antes de retornar lentamente."
+    ],
+    why: "Protege os tendões contra trancos balísticos e aumenta o tempo sob tensão.",
+    note: "Respire continuamente; não prenda a respiração durante a isometria."
+  }
+};
+
+function getTechInfo(techString){
+  const s = (techString || '').toLowerCase();
+  if(s.includes('drop-set') || s.includes('drop set')) return ADVANCED_TECHNIQUES_INFO['drop-set'];
+  if(s.includes('rest-pause') || s.includes('rest pause')) return ADVANCED_TECHNIQUES_INFO['rest-pause'];
+  if(s.includes('pico')) return ADVANCED_TECHNIQUES_INFO['pico de contração'];
+  if(s.includes('segurar') || s.includes('isometria')) return ADVANCED_TECHNIQUES_INFO['segurar'];
+  return ADVANCED_TECHNIQUES_INFO['drop-set'];
+}
+
+function openTechModal(techString){
+  const info = getTechInfo(techString);
+  openModal(info.title, info.badge, (body)=>{
+    body.innerHTML = `
+      <div class="adv-tech-card" style="border:none; padding:0; background:transparent;">
+        <p class="adv-tech-desc">${info.what}</p>
+        <div style="font-size:12px; font-weight:700; color:var(--ink); text-transform:uppercase; letter-spacing:.05em; margin:14px 0 6px;">
+          ⏱️ Como Executar Passo a Passo:
+        </div>
+        <ol class="adv-tech-steps">
+          ${info.steps.map(s=>`<li>${s}</li>`).join('')}
+        </ol>
+        <div style="font-size:12px; font-weight:700; color:var(--ink); text-transform:uppercase; letter-spacing:.05em; margin:14px 0 6px;">
+          🎯 Por Que Ela Funciona:
+        </div>
+        <p class="adv-tech-desc" style="margin-bottom:12px;">${info.why}</p>
+        <div class="adv-tech-note">
+          <b>⚠️ Regra de Segurança:</b> ${info.note}
+        </div>
+      </div>
+    `;
+  });
+}
+
+function renderTechGlossary(container){
+  const target = container || document.getElementById('appModalBody');
+  if(!target) return;
+  const list = Object.values(ADVANCED_TECHNIQUES_INFO);
+  target.innerHTML = `
+    <div style="font-size:12.5px; opacity:.8; margin-bottom:14px;">
+      As técnicas avançadas são aceleradores de intensidade usados com moderação estratégica nas últimas séries para gerar estímulo máximo sem precisar de treinos longos:
+    </div>
+    ${list.map(t=>`
+      <div class="adv-tech-card">
+        <div class="adv-tech-head">
+          <h4 class="adv-tech-title">${t.title}</h4>
+          <span class="adv-tech-badge">${t.badge}</span>
+        </div>
+        <p class="adv-tech-desc">${t.what}</p>
+        <ol class="adv-tech-steps">
+          ${t.steps.map(s=>`<li>${s}</li>`).join('')}
+        </ol>
+        <div class="adv-tech-note">
+          <b>💡 Dica Pro:</b> ${t.note}
+        </div>
+      </div>
+    `).join('')}
+  `;
+}
+
+const techGlossaryBtn = document.getElementById('techGlossaryBtn');
+if(techGlossaryBtn){
+  techGlossaryBtn.addEventListener('click', ()=>{
+    openModal('Glossário de Técnicas Avançadas', 'INTENSIDADE & HIPERTROFIA', (body)=>{
+      renderTechGlossary(body);
+    });
+  });
+}
+
 async function init(){
   await loadProgress();
   renderCatFilter();
@@ -971,3 +1105,4 @@ async function init(){
   selectDay(lastPlan, lastDay);
 }
 init();
+

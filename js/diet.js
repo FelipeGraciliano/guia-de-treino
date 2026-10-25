@@ -105,6 +105,10 @@ function renderDietPage(){
         <input type="number" step="0.1" id="dietWeightInput" value="${w}">
       </div>
       <div class="diet-input-item">
+        <label>Altura (cm):</label>
+        <input type="number" step="1" id="dietHeightInput" value="${h}">
+      </div>
+      <div class="diet-input-item">
         <label>Peso Alvo (kg):</label>
         <input type="number" step="0.5" id="dietTargetInput" value="${targetW}">
       </div>
@@ -228,6 +232,11 @@ function renderDietPage(){
   // Listeners de inputs
   container.querySelector('#dietWeightInput').addEventListener('change', (e)=>{
     dietState.weight = parseFloat(e.target.value) || 89.5;
+    saveDietState();
+    renderDietPage();
+  });
+  container.querySelector('#dietHeightInput').addEventListener('change', (e)=>{
+    dietState.height = parseFloat(e.target.value) || 168;
     saveDietState();
     renderDietPage();
   });
