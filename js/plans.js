@@ -894,8 +894,8 @@ const PLANS = {
       "ter": {
         "label": "Terça",
         "color": "ter",
-        "title": "Pull A — Foco: Costas Largura + Bíceps",
-        "note": "Descanse bem entre as puxadas (120s) para garantir que você consegue progredir carga. Bíceps precisa de 60-90s apenas.",
+        "title": "Pull A — Foco: Costas Puxadas (Largura V-Taper) + Bíceps",
+        "note": "Dia de abrir a asa das costas! Todas as puxadas verticais para maximizar a largura e desenhar o V-Taper. Descanse 90-120s nas puxadas pesadas.",
         "groups": [
           {
             "name": "Costas",
@@ -904,7 +904,7 @@ const PLANS = {
               {
                 "name": "Puxada alta aberta",
                 "scheme": "4×8–12",
-                "target": "Dorsal (Largura - Foco V-Taper)",
+                "target": "Grande dorsal e redondo maior (largura de costas) — pilar fundamental do formato V-Taper.",
                 "advanced": "🔥 Pico de contração",
                 "alts": [
                   "Puxada na máquina articulada aberta",
@@ -916,7 +916,7 @@ const PLANS = {
               {
                 "name": "Pulldown unilateral na polia",
                 "scheme": "3×10–15",
-                "target": "Dorsal (isolamento)",
+                "target": "Isolamento unilateral da grande dorsal — ativação pura sem fadiga de antebraço/bíceps.",
                 "alts": [
                   "Pulldown unilateral na máquina articulada",
                   "Pullover na polia alta com corda",
@@ -925,15 +925,15 @@ const PLANS = {
                 "how": "Em pé ou de joelhos diante da polia alta com pegador individual. Puxe o cabo trazendo o cotovelo rente à cintura em trajetória de arco. No final da descida, faça uma leve inclinação lateral do tronco para encurtar o dorsal ao máximo."
               },
               {
-                "name": "Remada curvada com barra",
-                "scheme": "3×8–10",
-                "target": "Espessura geral",
+                "name": "Puxada alta com triângulo",
+                "scheme": "3×8–12",
+                "target": "Grande dorsal com pegada neutra e maior amplitude de alongamento.",
                 "alts": [
-                  "Remada cavalinho",
-                  "Remada na máquina articulada",
-                  "Remada com halteres apoiado no banco"
+                  "Puxada alta neutra na máquina",
+                  "Puxada alta aberta",
+                  "Remada baixa com triângulo"
                 ],
-                "how": "Mesma postura rigorosa da remada curvada: coluna travada, joelhos semi-flexionados. Puxe a barra raspando pela coxa em direção ao abdômen, esmagando as costas no topo e descendo com controle excêntrico de 2 a 3 segundos."
+                "how": "Instale o triângulo na puxada alta. Segure na pegada neutra. Puxe levando o triângulo ao peito e jogando os cotovelos colados ao tronco. Mantenha o peito aberto e não balance a lombar para puxar."
               }
             ]
           },
@@ -1095,8 +1095,8 @@ const PLANS = {
       "qui": {
         "label": "Quinta",
         "color": "qui",
-        "title": "Push B — Foco: Peito Superior 2x + Tríceps",
-        "note": "Treino denso (17 séries). Foco em encher a porção superior do peito com halteres e queimar o tríceps.",
+        "title": "Push B — Foco: Peito Superior 2x + Ombro Lateral 3D",
+        "note": "Foco total na porção clavicular do peitoral e deltoide lateral. Braços descansam hoje para chegarem 100% recuperados para o super-pump de amanhã!",
         "groups": [
           {
             "name": "Peito",
@@ -1105,7 +1105,7 @@ const PLANS = {
               {
                 "name": "Supino inclinado 30° com halteres",
                 "scheme": "4×8–10",
-                "target": "Peitoral superior (2ª frequência com carga máxima)",
+                "target": "Feixe clavicular do peitoral superior com foco na porção medial e alongamento profundo.",
                 "alts": [
                   "Supino inclinado articulado (Máquina)",
                   "Supino inclinado no Smith",
@@ -1116,7 +1116,7 @@ const PLANS = {
               {
                 "name": "Mergulho nas paralelas ou Supino declinado",
                 "scheme": "3×8–12",
-                "target": "Corte inferior do peito (a linha de baixo)",
+                "target": "Corte inferior do peito e deltoide anterior — cria a separação e relevo do tórax.",
                 "alts": [
                   "Supino declinado articulado (Máquina)",
                   "Mergulho assistido na máquina (Graviton)",
@@ -1127,7 +1127,7 @@ const PLANS = {
               {
                 "name": "Crossover na polia alta",
                 "scheme": "3×10–15",
-                "target": "Ênfase inferior e miolo",
+                "target": "Feixe costal (peitoral inferior) e contorno medial externo do tórax.",
                 "advanced": "🔥 Rest-pause na última",
                 "alts": [
                   "Pec Deck (Peck Deck)",
@@ -1140,47 +1140,46 @@ const PLANS = {
           },
           {
             "name": "Ombros",
-            "total": "4 séries",
+            "total": "7 séries",
             "exercises": [
               {
                 "name": "Elevação lateral na polia (por trás)",
                 "scheme": "4×12–20",
-                "target": "Deltoide lateral (tensão constante)",
+                "target": "Deltoide lateral com trajeto por trás das costas para manter tensão pura no feixe médio.",
                 "alts": [
                   "Elevação lateral na polia pela frente",
                   "Elevação lateral na máquina",
                   "Elevação lateral com halteres"
                 ],
                 "how": "Fique de costas para a polia baixa, segurando o estribo com a mão oposta. Eleve o braço lateralmente em arco suave até a altura do ombro, focando na contração pura sem balanço do quadril. Retorne em 3 segundos."
+              },
+              {
+                "name": "Desenvolvimento na máquina",
+                "scheme": "3×8–12",
+                "target": "Deltoides com apoio dorsal estável para treinar próximo da falha com total segurança.",
+                "alts": [
+                  "Desenvolvimento com halteres",
+                  "Desenvolvimento no Smith",
+                  "Desenvolvimento militar com barra"
+                ],
+                "how": "Ajuste o banco para que as manoplas comecem na altura dos ombros. Apoie totalmente a coluna e cabeça. Empurre para cima com controle e segure a volta em 2 a 3 segundos sem deixar o bloco de peso tocar."
               }
             ]
           },
           {
-            "name": "Tríceps",
-            "total": "6 séries",
+            "name": "Abdômen & Core",
+            "total": "3 séries",
             "exercises": [
               {
-                "name": "Tríceps francês com halteres",
-                "scheme": "3×8–12",
-                "target": "Cabeça longa do tríceps e expansão do braço em posição elevada.",
+                "name": "Abdominal na polia",
+                "scheme": "3×12–15",
+                "target": "Reto abdominal superior e medial sob sobrecarga progressiva com cabo.",
                 "alts": [
-                  "Tríceps corda acima da cabeça na polia",
-                  "Tríceps francês unilateral com halter",
-                  "Tríceps testa com halteres"
+                  "Abdominal na máquina articulada de crunch",
+                  "Abdominal no banco declinado com anilha",
+                  "Elevação de pernas suspensa ou paralela"
                 ],
-                "how": "Sentado com apoio lombar, segure o halter pesado com as palmas unidas em concha sob a anilha superior. Desça devagar atrás do pescoço sentindo o alongamento do tríceps e empurre para cima."
-              },
-              {
-                "name": "Tríceps pulley com barra",
-                "scheme": "3×10–12",
-                "target": "Lateral / medial",
-                "advanced": "🔥 Rest-pause na última",
-                "alts": [
-                  "Tríceps pulley com corda",
-                  "Tríceps na máquina articulada",
-                  "Tríceps testa com barra W"
-                ],
-                "how": "Barra reta ou em V na polia alta. Pegada pronada. Cotovelos fixos ao lado das costelas. Empurre a barra para baixo até estender totalmente os cotovelos sem curvar os ombros para a frente."
+                "how": "Ajoelhado de frente ou de costas para a polia alta, segure a corda atrás da nuca ou ao lado das orelhas. Trave o quadril imóvel e flexione o tronco enrolando as costelas em direção ao quadril (como se fosse se dobrar ao meio). NÃO puxe com os braços nem sente nos calcanhares. Aperte por 1s no fundo e suba controlado."
               }
             ]
           }
@@ -1191,16 +1190,27 @@ const PLANS = {
       "sex": {
         "label": "Sexta",
         "color": "sex",
-        "title": "Pull B — Foco: Costas Espessura + Deltoide 3D + Bíceps",
-        "note": "Foco nas remadas pesadas, traseira do ombro e bíceps alongado. Treino denso e rápido.",
+        "title": "Pull B + Braços 3D — Remadas (Espessura) + Bíceps & Tríceps Juntos",
+        "note": "Remadas pesadas para densidade de costas + bloco completo de braços (Bíceps e Tríceps juntos em super-série). Saia da academia com o braço explodindo de pump para o fim de semana!",
         "groups": [
           {
             "name": "Costas",
             "total": "10 séries",
             "exercises": [
               {
-                "name": "Remada cavalinho",
+                "name": "Remada curvada com barra",
                 "scheme": "4×6–10",
+                "target": "Densidade e espessura dorsal completa com recrutamento de estabilizadores paravertebrais.",
+                "alts": [
+                  "Remada cavalinho",
+                  "Remada na máquina articulada",
+                  "Remada com halteres apoiado no banco"
+                ],
+                "how": "Mesma postura rigorosa da remada curvada: coluna travada, joelhos semi-flexionados. Puxe a barra raspando pela coxa em direção ao abdômen, esmagando as costas no topo e descendo com controle excêntrico de 2 a 3 segundos."
+              },
+              {
+                "name": "Remada cavalinho",
+                "scheme": "3×8–10",
                 "target": "Espessura dorsal e romboides com maior estabilidade do que a remada livre.",
                 "alts": [
                   "Remada curvada com barra",
@@ -1212,24 +1222,13 @@ const PLANS = {
               {
                 "name": "Remada baixa com triângulo",
                 "scheme": "3×8–12",
-                "target": "Romboides / Trapézio médio",
+                "target": "Dorsais mediais, trapézio e romboides com trajetória horizontal protegida.",
                 "alts": [
                   "Remada articulada unilateral na máquina",
                   "Remada curvada com halteres",
                   "Remada baixa com barra pegada aberta"
                 ],
                 "how": "Sentado com os joelhos levemente destravados, coluna ereta e peito aberto. Puxe o triângulo até o umbigo, puxando os cotovelos para trás e aproximando as escápulas. Evite usar impulso do tronco balançando para frente e para trás."
-              },
-              {
-                "name": "Puxada supinada (pegada inversa)",
-                "scheme": "3×8–12",
-                "target": "Dorsal + Bíceps auxiliar",
-                "alts": [
-                  "Puxada supinada na máquina articulada",
-                  "Barra fixa supinada (Chin-up)",
-                  "Puxada alta com triângulo"
-                ],
-                "how": "Pegada na largura dos ombros com as palmas voltadas para você. Puxe a barra até a altura do peito mantendo os cotovelos fechados apontando para a frente. Sinta a contração na base da asa das costas."
               }
             ]
           },
@@ -1264,13 +1263,13 @@ const PLANS = {
             ]
           },
           {
-            "name": "Bíceps",
+            "name": "Bíceps (Super Pump)",
             "total": "6 séries",
             "exercises": [
               {
                 "name": "Rosca inclinada",
                 "scheme": "3×8–12",
-                "target": "Cabeça longa (posição alongada)",
+                "target": "Cabeça longa do bíceps (pico do bíceps) através do alongamento máximo atrás do tronco.",
                 "advanced": "🔥 Rest-pause na última",
                 "alts": [
                   "Rosca alternada inclinada com halteres",
@@ -1294,19 +1293,31 @@ const PLANS = {
             ]
           },
           {
-            "name": "Abdômen & Core",
-            "total": "3 séries",
+            "name": "Tríceps (Super Pump)",
+            "total": "6 séries",
             "exercises": [
               {
-                "name": "Abdominal na polia",
-                "scheme": "3×12–15",
-                "target": "Reto abdominal superior e medial sob sobrecarga progressiva com cabo.",
-                "how": "Ajoelhado de frente ou de costas para a polia alta, segure a corda atrás da nuca ou ao lado das orelhas. Trave o quadril imóvel e flexione o tronco enrolando as costelas em direção ao quadril (como se fosse se dobrar ao meio). NÃO puxe com os braços nem sente nos calcanhares. Aperte por 1s no fundo e suba controlado.",
+                "name": "Tríceps francês com halteres",
+                "scheme": "3×8–12",
+                "target": "Cabeça longa do tríceps e expansão do braço em posição elevada.",
                 "alts": [
-                  "Abdominal na máquina articulada de crunch",
-                  "Abdominal no banco declinado com anilha",
-                  "Elevação de pernas suspensa ou paralela"
-                ]
+                  "Tríceps corda acima da cabeça na polia",
+                  "Tríceps francês unilateral com halter",
+                  "Tríceps testa com halteres"
+                ],
+                "how": "Sentado com apoio lombar, segure o halter pesado com as palmas unidas em concha sob a anilha superior. Desça devagar atrás do pescoço sentindo o alongamento do tríceps e empurre para cima."
+              },
+              {
+                "name": "Tríceps pulley com barra",
+                "scheme": "3×10–12",
+                "target": "Tríceps geral (cabeça lateral e medial) permitindo maior sobrecarga de peso.",
+                "advanced": "🔥 Rest-pause na última",
+                "alts": [
+                  "Tríceps pulley com corda",
+                  "Tríceps na máquina articulada",
+                  "Tríceps testa com barra W"
+                ],
+                "how": "Barra reta ou em V na polia alta. Pegada pronada. Cotovelos fixos ao lado das costelas. Empurre a barra para baixo até estender totalmente os cotovelos sem curvar os ombros para a frente."
               }
             ]
           }
@@ -1672,12 +1683,12 @@ const PLANS = {
         "groups": [
           {
             "name": "Quadríceps",
-            "total": "10 séries",
+            "total": "9 séries",
             "exercises": [
               {
                 "name": "Agachamento livre",
-                "scheme": "4×6–10",
-                "target": "Quadríceps geral / força",
+                "scheme": "3×6–10",
+                "target": "Quadríceps, glúteos e estabilização de core — o exercício composto número 1 para pernas.",
                 "alts": [
                   "Leg press 45°",
                   "Hack machine",
@@ -1688,7 +1699,7 @@ const PLANS = {
               {
                 "name": "Leg press 45°",
                 "scheme": "3×8–12",
-                "target": "Quadríceps geral",
+                "target": "Quadríceps geral, glúteos e adutores com segurança máxima para a coluna lombar.",
                 "alts": [
                   "Agachamento livre com barra",
                   "Hack machine",
@@ -1699,8 +1710,7 @@ const PLANS = {
               {
                 "name": "Cadeira extensora",
                 "scheme": "3×10–15",
-                "target": "Quadríceps, definição",
-                "advanced": "🔥 Drop-set na última",
+                "target": "Isolamento do reto femoral e vastos do quadríceps — definição e queimação pura.",
                 "alts": [
                   "Leg press unilateral",
                   "Agachamento búlgaro com halteres",
@@ -1711,13 +1721,13 @@ const PLANS = {
             ]
           },
           {
-            "name": "Posterior",
-            "total": "9 séries",
+            "name": "Posterior e Glúteos",
+            "total": "8 séries",
             "exercises": [
               {
                 "name": "Stiff",
-                "scheme": "3×6–10",
-                "target": "Posterior de coxa, glúteo e lombar",
+                "scheme": "3×8–12",
+                "target": "Isquiotibiais (posteriores de coxa) e glúteos na posição de alongamento profundo.",
                 "alts": [
                   "Stiff com halteres",
                   "Levantamento terra romeno no Smith",
@@ -1728,8 +1738,7 @@ const PLANS = {
               {
                 "name": "Mesa flexora",
                 "scheme": "3×8–12",
-                "target": "Posterior de coxa",
-                "advanced": "🔥 Pico de contração",
+                "target": "Isolamento dos isquiotibiais (bíceps femoral, semitendíneo) em posição deitada.",
                 "alts": [
                   "Cadeira flexora sentada",
                   "Stiff com halteres",
@@ -1738,27 +1747,9 @@ const PLANS = {
                 "how": "Deitado de bruços, ajuste o rolo para ficar logo acima dos calcanhares. Segure as manoplas para travar o quadril contra o banco (não empine o glúteo durante a subida). Flexione os joelhos até o calcanhar aproximar do glúteo e desça em 3s."
               },
               {
-                "name": "Cadeira flexora",
-                "scheme": "3×10–15",
-                "target": "Isolamento de posterior",
-                "advanced": "🔥 Rest-pause na última",
-                "alts": [
-                  "Mesa flexora deitada",
-                  "Stiff com halteres",
-                  "Flexora unilateral na polia"
-                ],
-                "how": "Ajuste a almofada de cima bem firme contra as coxas para não levantar o corpo. Flexione os joelhos puxando os calcanhares para baixo e para trás. Segure 1s e controle a subida sentindo o alongamento do posterior."
-              }
-            ]
-          },
-          {
-            "name": "Glúteos",
-            "total": "",
-            "exercises": [
-              {
                 "name": "Hip thrust",
-                "scheme": "3×8–12",
-                "target": "Agachamento + leg press + stiff já ajudam bastante",
+                "scheme": "2×8–12",
+                "target": "Glúteo máximo com pico de tensão máxima no topo da extensão do quadril.",
                 "alts": [
                   "Elevação pélvica na máquina articulada",
                   "Glúteo na polia baixa com caneleira",
@@ -1770,11 +1761,11 @@ const PLANS = {
           },
           {
             "name": "Panturrilhas",
-            "total": "",
+            "total": "4 séries",
             "exercises": [
               {
                 "name": "Panturrilha em pé",
-                "scheme": "3×8–12",
+                "scheme": "4×10–15",
                 "target": "Gastrocnêmio com joelhos estendidos para máximo recrutamento de fibras rápidas.",
                 "alts": [
                   "Panturrilha no Leg Press 45°",
@@ -1782,39 +1773,17 @@ const PLANS = {
                   "Panturrilha unilateral com halter"
                 ],
                 "how": "Apoie as almofadas nos ombros. Joelhos quase esticados (ligeiramente destravados). Desça devagar até o calcanhar descer além da plataforma e suba com força máxima na ponta dos pés sem quicar."
-              },
-              {
-                "name": "Panturrilha sentado",
-                "scheme": "3×12–20",
-                "target": "Músculo sóleo (músculo profundo da panturrilha que dá espessura e largura à perna).",
-                "alts": [
-                  "Panturrilha no leg press com joelhos flexionados",
-                  "Panturrilha em pé na máquina",
-                  "Panturrilha no Smith sentado com anilhas sob os pés"
-                ],
-                "how": "Sentado com joelhos a 90° e almofada sobre as coxas. Por estar com os joelhos dobrados, o gastrocnêmio fica encurtado e o sóleo assume quase todo o trabalho. Movimento lento: 2s subindo, 2s no pico e 3s descendo."
               }
             ]
           },
           {
-            "name": "Abdômen",
-            "total": "",
+            "name": "Abdômen & Linha de Cintura",
+            "total": "3 séries",
             "exercises": [
-              {
-                "name": "Abdominal na polia",
-                "scheme": "3×10–15",
-                "target": "Reto abdominal superior e medial sob sobrecarga progressiva com cabo.",
-                "alts": [
-                  "Abdominal na máquina articulada de crunch",
-                  "Abdominal no banco declinado com anilha",
-                  "Elevação de pernas suspensa ou paralela"
-                ],
-                "how": "Ajoelhado de frente ou de costas para a polia alta, segure a corda atrás da nuca ou ao lado das orelhas. Trave o quadril imóvel e flexione o tronco enrolando as costelas em direção ao quadril (como se fosse se dobrar ao meio). NÃO puxe com os braços nem sente nos calcanhares. Aperte por 1s no fundo e suba controlado."
-              },
               {
                 "name": "Elevação de pernas",
                 "scheme": "3×10–15",
-                "target": "Abdômen inferior",
+                "target": "Abdômen inferior e transverso abdominal.",
                 "alts": [
                   "Elevação de pernas suspensa na barra",
                   "Abdominal infra no banco declinado",
@@ -2081,6 +2050,23 @@ const PLANS = {
                   "Encolhimento na máquina de panturrilha"
                 ],
                 "how": "Barra apoiada na frente das coxas. Pés na largura dos ombros. Suba os ombros o máximo possível para cima, congele por 2 segundos no ponto mais alto e desça em 3 segundos sem dobrar os braços."
+              }
+            ]
+          },
+          {
+            "name": "Abdômen & Core",
+            "total": "3 séries",
+            "exercises": [
+              {
+                "name": "Abdominal na polia",
+                "scheme": "3×12–15",
+                "target": "Reto abdominal superior e medial sob sobrecarga progressiva com cabo.",
+                "how": "Ajoelhado de frente ou de costas para a polia alta, segure a corda atrás da nuca ou ao lado das orelhas. Trave o quadril imóvel e flexione o tronco enrolando as costelas em direção ao quadril (como se fosse se dobrar ao meio). NÃO puxe com os braços nem sente nos calcanhares. Aperte por 1s no fundo e suba controlado.",
+                "alts": [
+                  "Abdominal na máquina articulada de crunch",
+                  "Abdominal no banco declinado com anilha",
+                  "Elevação de pernas suspensa ou paralela"
+                ]
               }
             ]
           }
@@ -2410,12 +2396,12 @@ const PLANS = {
         "groups": [
           {
             "name": "Quadríceps",
-            "total": "10 séries",
+            "total": "9 séries",
             "exercises": [
               {
                 "name": "Agachamento livre",
-                "scheme": "4×6–10",
-                "target": "Quadríceps geral / força",
+                "scheme": "3×6–10",
+                "target": "Quadríceps, glúteos e estabilização de core — o exercício composto número 1 para pernas.",
                 "alts": [
                   "Leg press 45°",
                   "Hack machine",
@@ -2426,7 +2412,7 @@ const PLANS = {
               {
                 "name": "Leg press 45°",
                 "scheme": "3×8–12",
-                "target": "Quadríceps geral",
+                "target": "Quadríceps geral, glúteos e adutores com segurança máxima para a coluna lombar.",
                 "alts": [
                   "Agachamento livre com barra",
                   "Hack machine",
@@ -2437,7 +2423,7 @@ const PLANS = {
               {
                 "name": "Cadeira extensora",
                 "scheme": "3×10–15",
-                "target": "Quadríceps, definição",
+                "target": "Isolamento do reto femoral e vastos do quadríceps — definição e queimação pura.",
                 "alts": [
                   "Leg press unilateral",
                   "Agachamento búlgaro com halteres",
@@ -2448,13 +2434,13 @@ const PLANS = {
             ]
           },
           {
-            "name": "Posterior",
-            "total": "6 séries",
+            "name": "Posterior e Glúteos",
+            "total": "8 séries",
             "exercises": [
               {
                 "name": "Stiff",
-                "scheme": "3×6–10",
-                "target": "Posterior de coxa, glúteo e lombar",
+                "scheme": "3×8–12",
+                "target": "Isquiotibiais (posteriores de coxa) e glúteos na posição de alongamento profundo.",
                 "alts": [
                   "Stiff com halteres",
                   "Levantamento terra romeno no Smith",
@@ -2465,24 +2451,18 @@ const PLANS = {
               {
                 "name": "Mesa flexora",
                 "scheme": "3×8–12",
-                "target": "Posterior de coxa",
+                "target": "Isolamento dos isquiotibiais (bíceps femoral, semitendíneo) em posição deitada.",
                 "alts": [
                   "Cadeira flexora sentada",
                   "Stiff com halteres",
                   "Flexora em pé unilateral na máquina"
                 ],
                 "how": "Deitado de bruços, ajuste o rolo para ficar logo acima dos calcanhares. Segure as manoplas para travar o quadril contra o banco (não empine o glúteo durante a subida). Flexione os joelhos até o calcanhar aproximar do glúteo e desça em 3s."
-              }
-            ]
-          },
-          {
-            "name": "Glúteos",
-            "total": "",
-            "exercises": [
+              },
               {
                 "name": "Hip thrust",
-                "scheme": "3×8–12",
-                "target": "Agachamento + leg press + stiff já ajudam bastante",
+                "scheme": "2×8–12",
+                "target": "Glúteo máximo com pico de tensão máxima no topo da extensão do quadril.",
                 "alts": [
                   "Elevação pélvica na máquina articulada",
                   "Glúteo na polia baixa com caneleira",
@@ -2494,11 +2474,11 @@ const PLANS = {
           },
           {
             "name": "Panturrilhas",
-            "total": "",
+            "total": "4 séries",
             "exercises": [
               {
                 "name": "Panturrilha em pé",
-                "scheme": "3×8–12",
+                "scheme": "4×10–15",
                 "target": "Gastrocnêmio com joelhos estendidos para máximo recrutamento de fibras rápidas.",
                 "alts": [
                   "Panturrilha no Leg Press 45°",
@@ -2506,39 +2486,17 @@ const PLANS = {
                   "Panturrilha unilateral com halter"
                 ],
                 "how": "Apoie as almofadas nos ombros. Joelhos quase esticados (ligeiramente destravados). Desça devagar até o calcanhar descer além da plataforma e suba com força máxima na ponta dos pés sem quicar."
-              },
-              {
-                "name": "Panturrilha sentado",
-                "scheme": "3×12–20",
-                "target": "Músculo sóleo (músculo profundo da panturrilha que dá espessura e largura à perna).",
-                "alts": [
-                  "Panturrilha no leg press com joelhos flexionados",
-                  "Panturrilha em pé na máquina",
-                  "Panturrilha no Smith sentado com anilhas sob os pés"
-                ],
-                "how": "Sentado com joelhos a 90° e almofada sobre as coxas. Por estar com os joelhos dobrados, o gastrocnêmio fica encurtado e o sóleo assume quase todo o trabalho. Movimento lento: 2s subindo, 2s no pico e 3s descendo."
               }
             ]
           },
           {
-            "name": "Abdômen",
-            "total": "",
+            "name": "Abdômen & Linha de Cintura",
+            "total": "3 séries",
             "exercises": [
-              {
-                "name": "Abdominal na polia",
-                "scheme": "3×10–15",
-                "target": "Reto abdominal superior e medial sob sobrecarga progressiva com cabo.",
-                "alts": [
-                  "Abdominal na máquina articulada de crunch",
-                  "Abdominal no banco declinado com anilha",
-                  "Elevação de pernas suspensa ou paralela"
-                ],
-                "how": "Ajoelhado de frente ou de costas para a polia alta, segure a corda atrás da nuca ou ao lado das orelhas. Trave o quadril imóvel e flexione o tronco enrolando as costelas em direção ao quadril (como se fosse se dobrar ao meio). NÃO puxe com os braços nem sente nos calcanhares. Aperte por 1s no fundo e suba controlado."
-              },
               {
                 "name": "Elevação de pernas",
                 "scheme": "3×10–15",
-                "target": "Abdômen inferior",
+                "target": "Abdômen inferior e transverso abdominal.",
                 "alts": [
                   "Elevação de pernas suspensa na barra",
                   "Abdominal infra no banco declinado",
@@ -2841,6 +2799,23 @@ const PLANS = {
                   "Rosca inversa com barra W"
                 ],
                 "how": "Com pegada neutra, puxe o halter em direção ao ombro oposto mantendo o movimento rente ao peito. Essa trajetória foca diretamente no braquial e no relevo lateral do braço."
+              }
+            ]
+          },
+          {
+            "name": "Abdômen & Core",
+            "total": "3 séries",
+            "exercises": [
+              {
+                "name": "Abdominal na polia",
+                "scheme": "3×12–15",
+                "target": "Reto abdominal superior e medial sob sobrecarga progressiva com cabo.",
+                "how": "Ajoelhado de frente ou de costas para a polia alta, segure a corda atrás da nuca ou ao lado das orelhas. Trave o quadril imóvel e flexione o tronco enrolando as costelas em direção ao quadril (como se fosse se dobrar ao meio). NÃO puxe com os braços nem sente nos calcanhares. Aperte por 1s no fundo e suba controlado.",
+                "alts": [
+                  "Abdominal na máquina articulada de crunch",
+                  "Abdominal no banco declinado com anilha",
+                  "Elevação de pernas suspensa ou paralela"
+                ]
               }
             ]
           }
@@ -3186,12 +3161,12 @@ const PLANS = {
         "groups": [
           {
             "name": "Quadríceps",
-            "total": "10 séries",
+            "total": "9 séries",
             "exercises": [
               {
                 "name": "Agachamento livre",
-                "scheme": "4×6–10",
-                "target": "Quadríceps geral / força",
+                "scheme": "3×6–10",
+                "target": "Quadríceps, glúteos e estabilização de core — o exercício composto número 1 para pernas.",
                 "alts": [
                   "Leg press 45°",
                   "Hack machine",
@@ -3202,7 +3177,7 @@ const PLANS = {
               {
                 "name": "Leg press 45°",
                 "scheme": "3×8–12",
-                "target": "Quadríceps geral",
+                "target": "Quadríceps geral, glúteos e adutores com segurança máxima para a coluna lombar.",
                 "alts": [
                   "Agachamento livre com barra",
                   "Hack machine",
@@ -3213,7 +3188,7 @@ const PLANS = {
               {
                 "name": "Cadeira extensora",
                 "scheme": "3×10–15",
-                "target": "Quadríceps, definição",
+                "target": "Isolamento do reto femoral e vastos do quadríceps — definição e queimação pura.",
                 "alts": [
                   "Leg press unilateral",
                   "Agachamento búlgaro com halteres",
@@ -3224,13 +3199,13 @@ const PLANS = {
             ]
           },
           {
-            "name": "Posterior",
-            "total": "6 séries",
+            "name": "Posterior e Glúteos",
+            "total": "8 séries",
             "exercises": [
               {
                 "name": "Stiff",
-                "scheme": "3×6–10",
-                "target": "Posterior de coxa, glúteo e lombar",
+                "scheme": "3×8–12",
+                "target": "Isquiotibiais (posteriores de coxa) e glúteos na posição de alongamento profundo.",
                 "alts": [
                   "Stiff com halteres",
                   "Levantamento terra romeno no Smith",
@@ -3241,24 +3216,18 @@ const PLANS = {
               {
                 "name": "Mesa flexora",
                 "scheme": "3×8–12",
-                "target": "Posterior de coxa",
+                "target": "Isolamento dos isquiotibiais (bíceps femoral, semitendíneo) em posição deitada.",
                 "alts": [
                   "Cadeira flexora sentada",
                   "Stiff com halteres",
                   "Flexora em pé unilateral na máquina"
                 ],
                 "how": "Deitado de bruços, ajuste o rolo para ficar logo acima dos calcanhares. Segure as manoplas para travar o quadril contra o banco (não empine o glúteo durante a subida). Flexione os joelhos até o calcanhar aproximar do glúteo e desça em 3s."
-              }
-            ]
-          },
-          {
-            "name": "Glúteos",
-            "total": "",
-            "exercises": [
+              },
               {
                 "name": "Hip thrust",
-                "scheme": "3×8–12",
-                "target": "Agachamento + leg press + stiff já ajudam bastante",
+                "scheme": "2×8–12",
+                "target": "Glúteo máximo com pico de tensão máxima no topo da extensão do quadril.",
                 "alts": [
                   "Elevação pélvica na máquina articulada",
                   "Glúteo na polia baixa com caneleira",
@@ -3270,11 +3239,11 @@ const PLANS = {
           },
           {
             "name": "Panturrilhas",
-            "total": "",
+            "total": "4 séries",
             "exercises": [
               {
                 "name": "Panturrilha em pé",
-                "scheme": "3×8–12",
+                "scheme": "4×10–15",
                 "target": "Gastrocnêmio com joelhos estendidos para máximo recrutamento de fibras rápidas.",
                 "alts": [
                   "Panturrilha no Leg Press 45°",
@@ -3282,39 +3251,17 @@ const PLANS = {
                   "Panturrilha unilateral com halter"
                 ],
                 "how": "Apoie as almofadas nos ombros. Joelhos quase esticados (ligeiramente destravados). Desça devagar até o calcanhar descer além da plataforma e suba com força máxima na ponta dos pés sem quicar."
-              },
-              {
-                "name": "Panturrilha sentado",
-                "scheme": "3×12–20",
-                "target": "Músculo sóleo (músculo profundo da panturrilha que dá espessura e largura à perna).",
-                "alts": [
-                  "Panturrilha no leg press com joelhos flexionados",
-                  "Panturrilha em pé na máquina",
-                  "Panturrilha no Smith sentado com anilhas sob os pés"
-                ],
-                "how": "Sentado com joelhos a 90° e almofada sobre as coxas. Por estar com os joelhos dobrados, o gastrocnêmio fica encurtado e o sóleo assume quase todo o trabalho. Movimento lento: 2s subindo, 2s no pico e 3s descendo."
               }
             ]
           },
           {
-            "name": "Abdômen",
-            "total": "",
+            "name": "Abdômen & Linha de Cintura",
+            "total": "3 séries",
             "exercises": [
-              {
-                "name": "Abdominal na polia",
-                "scheme": "3×10–15",
-                "target": "Reto abdominal superior e medial sob sobrecarga progressiva com cabo.",
-                "alts": [
-                  "Abdominal na máquina articulada de crunch",
-                  "Abdominal no banco declinado com anilha",
-                  "Elevação de pernas suspensa ou paralela"
-                ],
-                "how": "Ajoelhado de frente ou de costas para a polia alta, segure a corda atrás da nuca ou ao lado das orelhas. Trave o quadril imóvel e flexione o tronco enrolando as costelas em direção ao quadril (como se fosse se dobrar ao meio). NÃO puxe com os braços nem sente nos calcanhares. Aperte por 1s no fundo e suba controlado."
-              },
               {
                 "name": "Elevação de pernas",
                 "scheme": "3×10–15",
-                "target": "Abdômen inferior",
+                "target": "Abdômen inferior e transverso abdominal.",
                 "alts": [
                   "Elevação de pernas suspensa na barra",
                   "Abdominal infra no banco declinado",
@@ -3637,6 +3584,23 @@ const PLANS = {
                 "how": "Deitado com halteres em pegada neutra. Desça os halteres nas laterais da cabeça mantendo os cotovelos apontados para o teto. Empurre até quase estender os braços."
               }
             ]
+          },
+          {
+            "name": "Abdômen & Core",
+            "total": "3 séries",
+            "exercises": [
+              {
+                "name": "Abdominal na polia",
+                "scheme": "3×12–15",
+                "target": "Reto abdominal superior e medial sob sobrecarga progressiva com cabo.",
+                "how": "Ajoelhado de frente ou de costas para a polia alta, segure a corda atrás da nuca ou ao lado das orelhas. Trave o quadril imóvel e flexione o tronco enrolando as costelas em direção ao quadril (como se fosse se dobrar ao meio). NÃO puxe com os braços nem sente nos calcanhares. Aperte por 1s no fundo e suba controlado.",
+                "alts": [
+                  "Abdominal na máquina articulada de crunch",
+                  "Abdominal no banco declinado com anilha",
+                  "Elevação de pernas suspensa ou paralela"
+                ]
+              }
+            ]
           }
         ],
         "division": "Limbs",
@@ -3937,12 +3901,12 @@ const PLANS = {
         "groups": [
           {
             "name": "Quadríceps",
-            "total": "10 séries",
+            "total": "9 séries",
             "exercises": [
               {
                 "name": "Agachamento livre",
-                "scheme": "4×6–10",
-                "target": "Quadríceps geral / força",
+                "scheme": "3×6–10",
+                "target": "Quadríceps, glúteos e estabilização de core — o exercício composto número 1 para pernas.",
                 "alts": [
                   "Leg press 45°",
                   "Hack machine",
@@ -3953,7 +3917,7 @@ const PLANS = {
               {
                 "name": "Leg press 45°",
                 "scheme": "3×8–12",
-                "target": "Quadríceps geral",
+                "target": "Quadríceps geral, glúteos e adutores com segurança máxima para a coluna lombar.",
                 "alts": [
                   "Agachamento livre com barra",
                   "Hack machine",
@@ -3964,7 +3928,7 @@ const PLANS = {
               {
                 "name": "Cadeira extensora",
                 "scheme": "3×10–15",
-                "target": "Quadríceps, definição",
+                "target": "Isolamento do reto femoral e vastos do quadríceps — definição e queimação pura.",
                 "alts": [
                   "Leg press unilateral",
                   "Agachamento búlgaro com halteres",
@@ -3975,13 +3939,13 @@ const PLANS = {
             ]
           },
           {
-            "name": "Posterior",
-            "total": "6 séries",
+            "name": "Posterior e Glúteos",
+            "total": "8 séries",
             "exercises": [
               {
                 "name": "Stiff",
-                "scheme": "3×6–10",
-                "target": "Posterior de coxa, glúteo e lombar",
+                "scheme": "3×8–12",
+                "target": "Isquiotibiais (posteriores de coxa) e glúteos na posição de alongamento profundo.",
                 "alts": [
                   "Stiff com halteres",
                   "Levantamento terra romeno no Smith",
@@ -3992,24 +3956,18 @@ const PLANS = {
               {
                 "name": "Mesa flexora",
                 "scheme": "3×8–12",
-                "target": "Posterior de coxa",
+                "target": "Isolamento dos isquiotibiais (bíceps femoral, semitendíneo) em posição deitada.",
                 "alts": [
                   "Cadeira flexora sentada",
                   "Stiff com halteres",
                   "Flexora em pé unilateral na máquina"
                 ],
                 "how": "Deitado de bruços, ajuste o rolo para ficar logo acima dos calcanhares. Segure as manoplas para travar o quadril contra o banco (não empine o glúteo durante a subida). Flexione os joelhos até o calcanhar aproximar do glúteo e desça em 3s."
-              }
-            ]
-          },
-          {
-            "name": "Glúteos",
-            "total": "",
-            "exercises": [
+              },
               {
                 "name": "Hip thrust",
-                "scheme": "3×8–12",
-                "target": "Agachamento + leg press + stiff já ajudam bastante",
+                "scheme": "2×8–12",
+                "target": "Glúteo máximo com pico de tensão máxima no topo da extensão do quadril.",
                 "alts": [
                   "Elevação pélvica na máquina articulada",
                   "Glúteo na polia baixa com caneleira",
@@ -4021,11 +3979,11 @@ const PLANS = {
           },
           {
             "name": "Panturrilhas",
-            "total": "",
+            "total": "4 séries",
             "exercises": [
               {
                 "name": "Panturrilha em pé",
-                "scheme": "3×8–12",
+                "scheme": "4×10–15",
                 "target": "Gastrocnêmio com joelhos estendidos para máximo recrutamento de fibras rápidas.",
                 "alts": [
                   "Panturrilha no Leg Press 45°",
@@ -4033,39 +3991,17 @@ const PLANS = {
                   "Panturrilha unilateral com halter"
                 ],
                 "how": "Apoie as almofadas nos ombros. Joelhos quase esticados (ligeiramente destravados). Desça devagar até o calcanhar descer além da plataforma e suba com força máxima na ponta dos pés sem quicar."
-              },
-              {
-                "name": "Panturrilha sentado",
-                "scheme": "3×12–20",
-                "target": "Músculo sóleo (músculo profundo da panturrilha que dá espessura e largura à perna).",
-                "alts": [
-                  "Panturrilha no leg press com joelhos flexionados",
-                  "Panturrilha em pé na máquina",
-                  "Panturrilha no Smith sentado com anilhas sob os pés"
-                ],
-                "how": "Sentado com joelhos a 90° e almofada sobre as coxas. Por estar com os joelhos dobrados, o gastrocnêmio fica encurtado e o sóleo assume quase todo o trabalho. Movimento lento: 2s subindo, 2s no pico e 3s descendo."
               }
             ]
           },
           {
-            "name": "Abdômen",
-            "total": "",
+            "name": "Abdômen & Linha de Cintura",
+            "total": "3 séries",
             "exercises": [
-              {
-                "name": "Abdominal na polia",
-                "scheme": "3×10–15",
-                "target": "Reto abdominal superior e medial sob sobrecarga progressiva com cabo.",
-                "alts": [
-                  "Abdominal na máquina articulada de crunch",
-                  "Abdominal no banco declinado com anilha",
-                  "Elevação de pernas suspensa ou paralela"
-                ],
-                "how": "Ajoelhado de frente ou de costas para a polia alta, segure a corda atrás da nuca ou ao lado das orelhas. Trave o quadril imóvel e flexione o tronco enrolando as costelas em direção ao quadril (como se fosse se dobrar ao meio). NÃO puxe com os braços nem sente nos calcanhares. Aperte por 1s no fundo e suba controlado."
-              },
               {
                 "name": "Elevação de pernas",
                 "scheme": "3×10–15",
-                "target": "Abdômen inferior",
+                "target": "Abdômen inferior e transverso abdominal.",
                 "alts": [
                   "Elevação de pernas suspensa na barra",
                   "Abdominal infra no banco declinado",
@@ -4388,6 +4324,23 @@ const PLANS = {
                   "Encolhimento na máquina de panturrilha"
                 ],
                 "how": "Barra apoiada na frente das coxas. Pés na largura dos ombros. Suba os ombros o máximo possível para cima, congele por 2 segundos no ponto mais alto e desça em 3 segundos sem dobrar os braços."
+              }
+            ]
+          },
+          {
+            "name": "Abdômen & Core",
+            "total": "3 séries",
+            "exercises": [
+              {
+                "name": "Abdominal na polia",
+                "scheme": "3×12–15",
+                "target": "Reto abdominal superior e medial sob sobrecarga progressiva com cabo.",
+                "how": "Ajoelhado de frente ou de costas para a polia alta, segure a corda atrás da nuca ou ao lado das orelhas. Trave o quadril imóvel e flexione o tronco enrolando as costelas em direção ao quadril (como se fosse se dobrar ao meio). NÃO puxe com os braços nem sente nos calcanhares. Aperte por 1s no fundo e suba controlado.",
+                "alts": [
+                  "Abdominal na máquina articulada de crunch",
+                  "Abdominal no banco declinado com anilha",
+                  "Elevação de pernas suspensa ou paralela"
+                ]
               }
             ]
           }

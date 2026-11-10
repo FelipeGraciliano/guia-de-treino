@@ -764,23 +764,35 @@ function selectDay(planKey, dayKey){
 }
 
 // ==== RESUMO DE SÉRIES POR SEMANA (MAPA COMPLETO INCLUINDO CORE) ====
+function getExerciseMuscleGroup(name, target, gname){
+  const str = (name + " " + (target||"") + " " + (gname||"")).toLowerCase();
+  if(/supino|peito|crucifixo(?! inverso)|pec deck|crossover|mergulho/i.test(name)) return "Peito";
+  if(/puxada|remada|pulldown|pullover|dorsal|costas|cavalinho|barra fixa/i.test(name)) return "Costas";
+  if(/desenvolvimento|elevação lateral|elevação frontal|crucifixo inverso|face pull|encolhimento|ombro|deltoide|trapézio/i.test(name)) return "Ombro";
+  if(/rosca|bíceps|biceps|braquial/i.test(name)) return "Bíceps";
+  if(/tríceps|triceps|testa|francês|pulley/i.test(name)) return "Tríceps";
+  if(/abdominal|elevação de pernas|prancha|core|abdômen/i.test(name)) return "Abdômen";
+  if(/agachamento|leg press|extensora|flexora|stiff|terra romeno|panturrilha|passada|hack|quadríceps|posterior|glúteo|perna|hip thrust|abdutora/i.test(name)) return "Pernas";
+  if(str.includes("peito") || str.includes("peitoral")) return "Peito";
+  if(str.includes("costas") || str.includes("dorsal")) return "Costas";
+  if(str.includes("tríceps") || str.includes("triceps")) return "Tríceps";
+  if(str.includes("bíceps") || str.includes("biceps")) return "Bíceps";
+  if(str.includes("ombro") || str.includes("deltoide")) return "Ombro";
+  if(str.includes("abdômen") || str.includes("abdominal") || str.includes("core")) return "Abdômen";
+  if(str.includes("perna") || str.includes("glúteo") || str.includes("panturrilha")) return "Pernas";
+  return "Outros";
+}
+
 function computeWeeklySummary(planKey){
   const totals = {};
   const days = PLANS[planKey].days;
   Object.keys(days).forEach(dayKey=>{
     days[dayKey].groups.forEach(g=>{
-      const gname = g.name.toLowerCase();
-      let muscle = "Outros";
-      if(gname.includes("peito") || gname.includes("peitoral")) muscle = "Peito";
-      else if(gname.includes("costas") || gname.includes("dorsal")) muscle = "Costas";
-      else if(gname.includes("tríceps") || gname.includes("triceps")) muscle = "Tríceps";
-      else if(gname.includes("bíceps") || gname.includes("biceps")) muscle = "Bíceps";
-      else if(gname.includes("ombro") || gname.includes("deltoide") || gname.includes("trapézio")) muscle = "Ombro";
-      else if(gname.includes("abdômen") || gname.includes("abdominal") || gname.includes("core")) muscle = "Abdômen";
-      else if(gname.includes("quadríceps") || gname.includes("posterior") || gname.includes("perna") || gname.includes("glúteo") || gname.includes("panturrilha")) muscle = "Pernas";
-      
-      const sets = g.exercises.reduce((s,ex)=> s + setsCountFromScheme(ex.scheme), 0);
-      totals[muscle] = (totals[muscle]||0) + sets;
+      g.exercises.forEach(ex=>{
+        const muscle = getExerciseMuscleGroup(ex.name, ex.target, g.name);
+        const sets = setsCountFromScheme(ex.scheme);
+        totals[muscle] = (totals[muscle]||0) + sets;
+      });
     });
   });
   return totals;
