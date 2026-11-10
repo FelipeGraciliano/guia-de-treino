@@ -363,7 +363,7 @@ function renderDay(planKey, dayKey){
             }).join('')}
           </div>
 
-          <button class="summary-btn history-btn" type="button" data-history-toggle="${id}">📈 Histórico de Cargas</button>
+          <button class="summary-btn history-btn" type="button" data-history-toggle="${id}" data-gi="${gi}" data-ei="${ei}">📈 Histórico de Cargas</button>
           <div class="history-panel" id="history-${id}"><div class="history-title">Histórico do exercício</div>${renderHistory(planKey,dayKey,gi,ei)}</div>
 
           <!-- COMO FAZER DETALHADO (TÉCNICA, POSTURA E CADÊNCIA) -->
@@ -385,7 +385,7 @@ function renderDay(planKey, dayKey){
             ${variantNames.map((v,i)=>{
               const badge = i === 0 ? 'Padrão' : ('Opção ' + i);
               return `
-              <button class="variant-pick${i===activeVariant?' picked':''}" data-ex-id="${id}" data-variant="${i}" data-variant-name="${v.replace(/"/g,'&quot;')}">
+              <button class="variant-pick${i===activeVariant?' picked':''}" data-ex-id="${id}" data-variant="${i}" data-variant-name="${v.replace(/"/g,'&quot;')}" data-gi="${gi}" data-ei="${ei}">
                 <span class="vp-check">${i===activeVariant?'●':'○'}</span>
                 <span class="vp-label"><span class="alt-badge-equip">${badge}</span>${v}</span>
               </button>`;
@@ -465,9 +465,16 @@ function renderDay(planKey, dayKey){
       // Detalhes atualizados do exercício escolhido
       const details = getExerciseDetails(varName);
 
+      // Localiza exercício original do plano para preservar técnica avançada
+      const card = btn.closest('.ex-card');
+      const setsRow = card ? card.querySelector('.sets-row') : null;
+      const gi = btn.dataset.gi !== undefined ? parseInt(btn.dataset.gi, 10) : (setsRow ? parseInt(setsRow.dataset.gi, 10) : 0);
+      const ei = btn.dataset.ei !== undefined ? parseInt(btn.dataset.ei, 10) : (setsRow ? parseInt(setsRow.dataset.ei, 10) : 0);
+      const ex = PLANS[planKey]?.days[dayKey]?.groups[gi]?.exercises[ei];
+
       // Atualiza nome exibido, foco, instruções e links
       const nameEl = document.getElementById('name-'+id);
-      nameEl.innerHTML = (variant>0 ? '🔁 ' : '') + varName + (ex.advanced ? ` <button type="button" class="adv-tag-btn" data-tech="${ex.advanced.replace(/"/g,'&quot;')}" title="Toque para entender esta técnica">${ex.advanced} ℹ️</button>` : '');
+      nameEl.innerHTML = (variant>0 ? '🔁 ' : '') + varName + (ex && ex.advanced ? ` <button type="button" class="adv-tag-btn" data-tech="${ex.advanced.replace(/"/g,'&quot;')}" title="Toque para entender esta técnica">${ex.advanced} ℹ️</button>` : '');
       nameEl.querySelectorAll('.adv-tag-btn').forEach(b=>{
         b.addEventListener('click', (ev)=>{
           ev.stopPropagation();
@@ -488,6 +495,8 @@ function renderDay(planKey, dayKey){
         const labelEl = swapBtn.querySelector('.swap-label');
         if(labelEl) labelEl.textContent = variant>0 ? 'Trocar variação (fazendo substituto)' : 'Não tem o equipamento? (3 Opções de substituição)';
       }
+
+      addHistoryEntry(planKey, dayKey, gi, ei, varName);
     });
   });
 
@@ -511,6 +520,10 @@ function renderDay(planKey, dayKey){
       const hp=document.getElementById('history-'+btn.dataset.historyToggle);
       if(!hp) return;
       hp.classList.toggle('show');
+      const card = btn.closest('.ex-card');
+      const setsRow = card ? card.querySelector('.sets-row') : null;
+      const gi = btn.dataset.gi !== undefined ? parseInt(btn.dataset.gi, 10) : (setsRow ? parseInt(setsRow.dataset.gi, 10) : 0);
+      const ei = btn.dataset.ei !== undefined ? parseInt(btn.dataset.ei, 10) : (setsRow ? parseInt(setsRow.dataset.ei, 10) : 0);
       if(hp.classList.contains('show')) hp.innerHTML='<div class="history-title">Histórico do exercício</div>'+renderHistory(planKey,dayKey,gi,ei);
     });
   });
