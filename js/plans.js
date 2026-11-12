@@ -894,6 +894,561 @@ const PLANS = {
       "ter": {
         "label": "Terça",
         "color": "ter",
+        "title": "Pull A — Foco: Costas Largura + Bíceps",
+        "note": "Descanse bem entre as puxadas (120s) para garantir que você consegue progredir carga. Bíceps precisa de 60-90s apenas.",
+        "groups": [
+          {
+            "name": "Costas",
+            "total": "10 séries",
+            "exercises": [
+              {
+                "name": "Puxada alta aberta",
+                "scheme": "4×8–12",
+                "target": "Dorsal (Largura - Foco V-Taper)",
+                "advanced": "🔥 Pico de contração",
+                "alts": [
+                  "Puxada na máquina articulada aberta",
+                  "Puxada alta com triângulo",
+                  "Barra fixa pronada (ou Graviton)"
+                ],
+                "how": "Pegada pronada cerca de 1,5x a largura dos ombros. Trave as coxas no apoio. Inicie o movimento deprimindo as escápulas e puxe a barra em direção ao queixo/peito superior, levando os cotovelos para baixo e para os bolsos de trás. Suba alongando totalmente os dorsais."
+              },
+              {
+                "name": "Pulldown unilateral na polia",
+                "scheme": "3×10–15",
+                "target": "Dorsal (isolamento)",
+                "alts": [
+                  "Pulldown unilateral na máquina articulada",
+                  "Pullover na polia alta com corda",
+                  "Remada serrote com halter"
+                ],
+                "how": "Em pé ou de joelhos diante da polia alta com pegador individual. Puxe o cabo trazendo o cotovelo rente à cintura em trajetória de arco. No final da descida, faça uma leve inclinação lateral do tronco para encurtar o dorsal ao máximo."
+              },
+              {
+                "name": "Remada curvada com barra",
+                "scheme": "3×8–10",
+                "target": "Espessura geral",
+                "alts": [
+                  "Remada cavalinho",
+                  "Remada na máquina articulada",
+                  "Remada com halteres apoiado no banco"
+                ],
+                "how": "Mesma postura rigorosa da remada curvada: coluna travada, joelhos semi-flexionados. Puxe a barra raspando pela coxa em direção ao abdômen, esmagando as costas no topo e descendo com controle excêntrico de 2 a 3 segundos."
+              }
+            ]
+          },
+          {
+            "name": "Ombro Posterior",
+            "total": "3 séries",
+            "exercises": [
+              {
+                "name": "Crucifixo inverso",
+                "scheme": "3×12–15",
+                "target": "Deltoide posterior",
+                "alts": [
+                  "Crucifixo inverso na máquina (Peck Deck inverso)",
+                  "Face pull na polia com corda",
+                  "Crucifixo inverso na polia cruzada"
+                ],
+                "how": "Tronco inclinado a ~45° ou deitado de bruços no banco inclinado. Com cotovelos semi-flexionados, abra os braços para os lados focando em contrair a parte de trás do ombro, e não apenas espremer as escápulas. Desça com controle."
+              }
+            ]
+          },
+          {
+            "name": "Bíceps",
+            "total": "6 séries",
+            "exercises": [
+              {
+                "name": "Rosca direta com barra/W",
+                "scheme": "3×8–10",
+                "target": "Bíceps braquial geral (cabeça curta e longa) — construtor de volume e pico do braço.",
+                "advanced": "🔥 Drop-set na última",
+                "alts": [
+                  "Rosca direta na polia baixa com barra",
+                  "Rosca direta com halteres em pé",
+                  "Rosca direta na máquina articulada"
+                ],
+                "how": "A barra W alivia a pressão nos punhos. Cotovelos colados ao lado do tronco. Flexione os braços até o peito sem jogar os cotovelos para frente e sem balançar a lombar. Desça controlando o peso até estender quase totalmente."
+              },
+              {
+                "name": "Rosca Scott",
+                "scheme": "3×10–12",
+                "target": "Bíceps (Cabeça curta)",
+                "advanced": "🔥 Rest-pause na última",
+                "alts": [
+                  "Rosca Scott na máquina articulada",
+                  "Rosca concentrada com halter",
+                  "Rosca Scott unilateral com halter"
+                ],
+                "how": "Ajuste o assento para que o peito fique encostado e as axilas fiquem bem acomodadas no topo da almofada Scott. Desça o peso devagar até faltar cerca de 5° para esticar o cotovelo (não hiperextenda sob carga pesada) e suba contraindo o bíceps."
+              }
+            ]
+          }
+        ],
+        "division": "Pull",
+        "muscles": "Costas + Trapézio + Bíceps + Ombro posterior"
+      },
+      "qua": {
+        "label": "Quarta",
+        "color": "qua",
+        "title": "Legs & Abdômen — Intensidade sem Exagero",
+        "note": "O volume não é gigantesco, mas cada série precisa ser pesada de verdade. Descanse 2 a 3 minutos no Leg Press.",
+        "groups": [
+          {
+            "name": "Quadríceps",
+            "total": "7 séries",
+            "exercises": [
+              {
+                "name": "Leg press 45°",
+                "scheme": "4×8–12",
+                "target": "Quadríceps geral (seguro e pesado)",
+                "alts": [
+                  "Agachamento livre com barra",
+                  "Hack machine",
+                  "Leg press horizontal (Máquina)"
+                ],
+                "how": "Pés na largura dos ombros no meio da plataforma. Desça a plataforma flexionando os joelhos até formar ~90° SEM descolar o quadril e a lombar do encosto. Empurre com os calcanhares sem hiperestender ou travar os joelhos no topo."
+              },
+              {
+                "name": "Cadeira extensora",
+                "scheme": "3×10–15",
+                "target": "Quadríceps isolado",
+                "advanced": "🔥 Drop-set nas duas últimas",
+                "alts": [
+                  "Leg press unilateral",
+                  "Agachamento búlgaro com halteres",
+                  "Passada (afundo) com halteres"
+                ],
+                "how": "Ajuste o encosto para o joelho ficar exatamente alinhado com o eixo giratório da máquina. Ajuste o rolo sobre o peito do pé. Estenda as pernas segurando 1 a 2 segundos no topo e desça em 3 segundos controlados sem deixar o peso bater."
+              }
+            ]
+          },
+          {
+            "name": "Posteriores e Glúteos",
+            "total": "7 séries",
+            "exercises": [
+              {
+                "name": "Stiff com halteres ou barra",
+                "scheme": "4×8–12",
+                "target": "Posterior + Glúteo",
+                "alts": [
+                  "Levantamento terra romeno com barra",
+                  "Mesa flexora",
+                  "Cadeira flexora"
+                ],
+                "how": "Mantenha a lordose lombar neutra o tempo todo. Desça em 3 segundos sentindo a musculatura posterior esticar sob carga. Pare antes da lombar arredondar e suba com força dos calcanhares e glúteos."
+              },
+              {
+                "name": "Mesa flexora",
+                "scheme": "3×10–15",
+                "target": "Posterior isolado",
+                "advanced": "🔥 Rest-pause na última",
+                "alts": [
+                  "Cadeira flexora sentada",
+                  "Stiff com halteres",
+                  "Flexora em pé unilateral na máquina"
+                ],
+                "how": "Deitado de bruços, ajuste o rolo para ficar logo acima dos calcanhares. Segure as manoplas para travar o quadril contra o banco (não empine o glúteo durante a subida). Flexione os joelhos até o calcanhar aproximar do glúteo e desça em 3s."
+              }
+            ]
+          },
+          {
+            "name": "Panturrilhas",
+            "total": "4 séries",
+            "exercises": [
+              {
+                "name": "Panturrilha no leg press ou em pé",
+                "scheme": "4×12–20",
+                "target": "Gastrocnêmio (parte alta e visível da panturrilha) — exige grande amplitude e pausa na extensão.",
+                "advanced": "🔥 Pico de contração de 2s",
+                "alts": [
+                  "Panturrilha em pé na máquina",
+                  "Panturrilha sentado na máquina",
+                  "Panturrilha unilateral com halter em degrau"
+                ],
+                "how": "Apoie apenas a ponta dos pés na borda da plataforma. Desça os calcanhares ao máximo sentindo o tendão e o músculo alongarem (segure 1s embaixo para tirar o reflexo elástico). Suba na ponta máxima dos pés e aperte por 2 segundos no topo."
+              }
+            ]
+          },
+          {
+            "name": "Abdômen & Linha de Cintura",
+            "total": "3 séries",
+            "exercises": [
+              {
+                "name": "Elevação de pernas suspensa ou paralela",
+                "scheme": "3×12–15",
+                "target": "Abdômen infra / compactar cintura",
+                "advanced": "🔥 Segurar 1s no topo",
+                "alts": [
+                  "Abdominal infra no chão / banco declinado",
+                  "Abdominal na polia alta com corda",
+                  "Prancha abdominal com contração ativa"
+                ],
+                "how": "Suspenso na barra ou apoiado no suporte de paralelas. Inicie o movimento fazendo uma báscula de quadril (enrolando a pelve para cima em direção ao umbigo), e não apenas levantando as pernas. Se estiver pesado, dobre os joelhos a 90°. Segure 1s no topo e desça controlando sem balançar o corpo."
+              }
+            ]
+          }
+        ],
+        "division": "Legs",
+        "muscles": "Quadríceps + Posteriores + Glúteos + Panturrilhas + Abdômen"
+      },
+      "qui": {
+        "label": "Quinta",
+        "color": "qui",
+        "title": "Push B — Foco: Peito Superior 2x + Tríceps",
+        "note": "Treino denso (17 séries). Foco em encher a porção superior do peito com halteres e queimar o tríceps.",
+        "groups": [
+          {
+            "name": "Peito",
+            "total": "10 séries",
+            "exercises": [
+              {
+                "name": "Supino inclinado 30° com halteres",
+                "scheme": "4×8–10",
+                "target": "Peitoral superior (2ª frequência com carga máxima)",
+                "alts": [
+                  "Supino inclinado articulado (Máquina)",
+                  "Supino inclinado no Smith",
+                  "Crucifixo inclinado com halteres"
+                ],
+                "how": "Banco exatamente a 30° para isolar a parte alta do peito. Mantenha os pés firmes no chão e glúteo apoiado. Desça sentindo o alongamento do peitoral superior, faça uma pausa de 1 segundo embaixo e empurre em trajetória ligeiramente arqueada sem encostar os halteres."
+              },
+              {
+                "name": "Mergulho nas paralelas ou Supino declinado",
+                "scheme": "3×8–12",
+                "target": "Corte inferior do peito (a linha de baixo)",
+                "alts": [
+                  "Supino declinado articulado (Máquina)",
+                  "Mergulho assistido na máquina (Graviton)",
+                  "Crossover na polia alta"
+                ],
+                "how": "Nas paralelas, incline o tronco 30° à frente com cotovelos levemente abertos para direcionar ao peitoral. Desça até os cotovelos formarem ~90° e suba empurrando com o peito. Se fizer no supino declinado, desça a barra até a linha inferior do peito."
+              },
+              {
+                "name": "Crossover na polia alta",
+                "scheme": "3×10–15",
+                "target": "Ênfase inferior e miolo",
+                "advanced": "🔥 Rest-pause na última",
+                "alts": [
+                  "Pec Deck (Peck Deck)",
+                  "Mergulho nas paralelas ou máquina",
+                  "Crucifixo declinado com halteres"
+                ],
+                "how": "Polias no ponto mais alto. Incline levemente o tronco à frente mantendo a coluna ereta. Puxe os cabos para baixo e para frente em direção ao umbigo/quadril, cruzando ligeiramente as mãos. Aperte o peitoral inferior por 1 segundo no ponto de pico."
+              }
+            ]
+          },
+          {
+            "name": "Ombros",
+            "total": "4 séries",
+            "exercises": [
+              {
+                "name": "Elevação lateral na polia (por trás)",
+                "scheme": "4×12–20",
+                "target": "Deltoide lateral (tensão constante)",
+                "alts": [
+                  "Elevação lateral na polia pela frente",
+                  "Elevação lateral na máquina",
+                  "Elevação lateral com halteres"
+                ],
+                "how": "Fique de costas para a polia baixa, segurando o estribo com a mão oposta. Eleve o braço lateralmente em arco suave até a altura do ombro, focando na contração pura sem balanço do quadril. Retorne em 3 segundos."
+              }
+            ]
+          },
+          {
+            "name": "Tríceps",
+            "total": "6 séries",
+            "exercises": [
+              {
+                "name": "Tríceps francês com halteres",
+                "scheme": "3×8–12",
+                "target": "Cabeça longa do tríceps e expansão do braço em posição elevada.",
+                "alts": [
+                  "Tríceps corda acima da cabeça na polia",
+                  "Tríceps francês unilateral com halter",
+                  "Tríceps testa com halteres"
+                ],
+                "how": "Sentado com apoio lombar, segure o halter pesado com as palmas unidas em concha sob a anilha superior. Desça devagar atrás do pescoço sentindo o alongamento do tríceps e empurre para cima."
+              },
+              {
+                "name": "Tríceps pulley com barra",
+                "scheme": "3×10–12",
+                "target": "Lateral / medial",
+                "advanced": "🔥 Rest-pause na última",
+                "alts": [
+                  "Tríceps pulley com corda",
+                  "Tríceps na máquina articulada",
+                  "Tríceps testa com barra W"
+                ],
+                "how": "Barra reta ou em V na polia alta. Pegada pronada. Cotovelos fixos ao lado das costelas. Empurre a barra para baixo até estender totalmente os cotovelos sem curvar os ombros para a frente."
+              }
+            ]
+          }
+        ],
+        "division": "Push",
+        "muscles": "Peito + Ombros + Tríceps"
+      },
+      "sex": {
+        "label": "Sexta",
+        "color": "sex",
+        "title": "Pull B — Foco: Costas Espessura + Deltoide 3D + Bíceps",
+        "note": "Foco nas remadas pesadas, traseira do ombro e bíceps alongado. Treino denso e rápido.",
+        "groups": [
+          {
+            "name": "Costas",
+            "total": "10 séries",
+            "exercises": [
+              {
+                "name": "Remada cavalinho",
+                "scheme": "4×6–10",
+                "target": "Espessura dorsal e romboides com maior estabilidade do que a remada livre.",
+                "alts": [
+                  "Remada curvada com barra",
+                  "Remada na máquina articulada (peito apoiado)",
+                  "Remada baixa com triângulo"
+                ],
+                "how": "Posicione-se sobre a barra T ou no aparelho de remada cavalinho. Com peito aberto e lombar firme, puxe o pegador até tocar a parte inferior do abdômen. Puxe liderando pelos cotovelos e segure o pico de contração por 1 segundo."
+              },
+              {
+                "name": "Remada baixa com triângulo",
+                "scheme": "3×8–12",
+                "target": "Romboides / Trapézio médio",
+                "alts": [
+                  "Remada articulada unilateral na máquina",
+                  "Remada curvada com halteres",
+                  "Remada baixa com barra pegada aberta"
+                ],
+                "how": "Sentado com os joelhos levemente destravados, coluna ereta e peito aberto. Puxe o triângulo até o umbigo, puxando os cotovelos para trás e aproximando as escápulas. Evite usar impulso do tronco balançando para frente e para trás."
+              },
+              {
+                "name": "Puxada supinada (pegada inversa)",
+                "scheme": "3×8–12",
+                "target": "Dorsal + Bíceps auxiliar",
+                "alts": [
+                  "Puxada supinada na máquina articulada",
+                  "Barra fixa supinada (Chin-up)",
+                  "Puxada alta com triângulo"
+                ],
+                "how": "Pegada na largura dos ombros com as palmas voltadas para você. Puxe a barra até a altura do peito mantendo os cotovelos fechados apontando para a frente. Sinta a contração na base da asa das costas."
+              }
+            ]
+          },
+          {
+            "name": "Deltoide Posterior & Trapézio",
+            "total": "6 séries",
+            "exercises": [
+              {
+                "name": "Face pull na polia com corda",
+                "scheme": "3×12–15",
+                "target": "Deltoide posterior e rotação externa (Ombro 3D)",
+                "advanced": "🔥 Segurar 1s atrás",
+                "alts": [
+                  "Crucifixo inverso na máquina",
+                  "Crucifixo inverso com halteres",
+                  "Face pull com elástico (Superband)"
+                ],
+                "how": "Polia na altura dos olhos com corda dupla. Puxe em direção ao rosto, abrindo as pontas da corda para os lados das têmporas e girando os punhos para fora. Termine na posição de 'duplo bíceps' segurando 1s."
+              },
+              {
+                "name": "Encolhimento com halteres",
+                "scheme": "3×10–15",
+                "target": "Trapézio superior",
+                "advanced": "🔥 Pico de contração de 2s",
+                "alts": [
+                  "Encolhimento na máquina articulada ou Smith",
+                  "Encolhimento com barra pela frente",
+                  "Encolhimento na polia baixa com barra"
+                ],
+                "how": "Halteres ao lado do corpo com pegada neutra. Eleve os ombros reto para cima em direção às orelhas (NUNCA faça giros com os ombros para não desgastar o manguito). Segure 2 segundos no topo e desça sentindo o peso alongar o trapézio."
+              }
+            ]
+          },
+          {
+            "name": "Bíceps",
+            "total": "6 séries",
+            "exercises": [
+              {
+                "name": "Rosca inclinada",
+                "scheme": "3×8–12",
+                "target": "Cabeça longa (posição alongada)",
+                "advanced": "🔥 Rest-pause na última",
+                "alts": [
+                  "Rosca alternada inclinada com halteres",
+                  "Rosca no cabo atrás do corpo (Bayesian curl)",
+                  "Rosca Scott com halteres"
+                ],
+                "how": "Banco inclinado a 45°-60°. Deite com os braços soltos apontando para trás da linha do corpo. Flexione os cotovelos girando os punhos para cima (supinação) no terço final. O ponto de maior estímulo é o alongamento na base do movimento."
+              },
+              {
+                "name": "Rosca martelo",
+                "scheme": "3×10–12",
+                "target": "Músculo braquial e braquiorradial (antebraço) — 'empurra' o bíceps para cima deixando o braço mais largo e volumoso de frente.",
+                "advanced": "🔥 Drop-set na última",
+                "alts": [
+                  "Rosca martelo na polia com corda",
+                  "Rosca martelo no banco Scott",
+                  "Rosca martelo cross-body com halteres"
+                ],
+                "how": "Pegada neutra (palmas viradas uma para a outra o tempo todo). Suba os halteres em direção aos ombros mantendo os cotovelos fixos. Segure 1s no topo e desça em 3 segundos sentindo a lateral do braço e antebraço queimar."
+              }
+            ]
+          },
+          {
+            "name": "Abdômen & Core",
+            "total": "3 séries",
+            "exercises": [
+              {
+                "name": "Abdominal na polia",
+                "scheme": "3×12–15",
+                "target": "Reto abdominal superior e medial sob sobrecarga progressiva com cabo.",
+                "how": "Ajoelhado de frente ou de costas para a polia alta, segure a corda atrás da nuca ou ao lado das orelhas. Trave o quadril imóvel e flexione o tronco enrolando as costelas em direção ao quadril (como se fosse se dobrar ao meio). NÃO puxe com os braços nem sente nos calcanhares. Aperte por 1s no fundo e suba controlado.",
+                "alts": [
+                  "Abdominal na máquina articulada de crunch",
+                  "Abdominal no banco declinado com anilha",
+                  "Elevação de pernas suspensa ou paralela"
+                ]
+              }
+            ]
+          }
+        ],
+        "division": "Pull",
+        "muscles": "Costas + Trapézio + Bíceps + Ombro posterior"
+      }
+    }
+  },
+  "rec_pump": {
+    "label": "⭐ Felipe (Super Pump & Braços 3D)",
+    "desc": "Variação de choque e especialização: Puxadas puras na Terça, Peito/Ombro isolado na Quinta e Super Bloco de Bíceps + Tríceps juntos na Sexta para pump máximo.",
+    "category": "REC",
+    "tags": [
+      "RECOMENDADO",
+      "FELIPE",
+      "BRAÇOS 3D",
+      "PUMP",
+      "ESPECIALIZAÇÃO",
+      "COSTAS DIVIDIDA"
+    ],
+    "meta": {
+      "foco": "Super Pump de Braços (Bíceps + Tríceps juntos) e Costas Dividida (Puxadas vs Remadas)",
+      "frequencia": "5 dias (Push A/B, Pull A/B, Legs)",
+      "estilo": "Alta Densidade & Super Séries de Braço",
+      "fase": "Variação Opcional / Bloco de Choque"
+    },
+    "division": "Push / Pull / Legs (Pump Focus)",
+    "divisionMuscles": "Peito + Ombros + Tríceps → Costas (Puxadas) + Bíceps → Pernas → Peito Superior + Ombros → Costas (Remadas) + Bíceps & Tríceps Juntos",
+    "divisionDescription": "Variação do treino do Felipe com separação de puxadas (Terça) e remadas (Sexta), e bloco duplo conjugado de braços na sexta para máximo pump antes do fim de semana.",
+    "days": {
+      "seg": {
+        "label": "Segunda",
+        "color": "seg",
+        "title": "Push A — Foco: Peito Superior + Ombro Lateral",
+        "note": "O volume por sessão aqui é menor (cerca de 20 séries totais). O segredo é INTENSIDADE (chegar perto da falha) e não quantidade. Descanse 90-120s.",
+        "groups": [
+          {
+            "name": "Peito",
+            "total": "10 séries",
+            "exercises": [
+              {
+                "name": "Supino inclinado com halteres",
+                "scheme": "4×8–12",
+                "target": "Peitoral superior (ajuda na postura visual)",
+                "alts": [
+                  "Supino inclinado articulado (Máquina)",
+                  "Supino inclinado no Smith",
+                  "Crossover na polia baixa inclinado"
+                ],
+                "how": "Ajuste o banco em 30° a 40° (inclinação maior rouba trabalho para os ombros). Escápulas retraídas e travadas no banco. Desça os halteres em 2 a 3 segundos com os cotovelos a 45°–60° do tronco (nunca abertos a 90°). Empurre convergindo levemente no topo sem bater os halteres e sem perder a tensão nos cotovelos."
+              },
+              {
+                "name": "Supino reto com barra",
+                "scheme": "3×6–10",
+                "target": "Peitoral médio/geral",
+                "alts": [
+                  "Supino reto com halteres",
+                  "Supino reto articulado (Máquina)",
+                  "Supino reto no Smith"
+                ],
+                "how": "Pegada um pouco além da largura dos ombros. Apoie pés, glúteos e escápulas com leve arco lombar natural. Desça a barra controlada até encostar suavemente na linha inferior dos mamilos, com cotovelos em ~70°. Empurre em linha reta/leve arco sem tirar as escápulas do banco."
+              },
+              {
+                "name": "Crossover na polia baixa (de baixo pra cima)",
+                "scheme": "3×10–15",
+                "target": "Corte superior e miolo do peito",
+                "advanced": "🔥 Drop-set na última",
+                "alts": [
+                  "Crucifixo inclinado com halteres",
+                  "Supino inclinado articulado (Máquina)",
+                  "Crucifixo inclinado na polia média"
+                ],
+                "how": "Posicione as polias no ponto mais baixo com pegadores em estribo. Dê um passo à frente, peito erguido. Com cotovelos levemente flexionados, puxe os cabos de baixo para cima convergindo as mãos na altura dos olhos/queixo. Segure 1s apertando o peito no topo."
+              }
+            ]
+          },
+          {
+            "name": "Ombros",
+            "total": "7 séries",
+            "exercises": [
+              {
+                "name": "Desenvolvimento militar",
+                "scheme": "3×6–10",
+                "target": "Deltoide anterior",
+                "alts": [
+                  "Desenvolvimento com halteres no banco 75°",
+                  "Desenvolvimento na máquina articulada",
+                  "Desenvolvimento no Smith"
+                ],
+                "how": "Em pé ou sentado, barra na altura das clavículas. Segure com pegada pouco além dos ombros e cotovelos sob os punhos. Empurre a barra acima da cabeça travando o abdômen e glúteos para não hiperestender a lombar. Desça controlado até o queixo/clavícula."
+              },
+              {
+                "name": "Elevação lateral com halteres",
+                "scheme": "4×10–15",
+                "target": "Deltoide lateral (Essencial para o V-Taper)",
+                "advanced": "🔥 Drop-set na última",
+                "alts": [
+                  "Elevação lateral na máquina articulada",
+                  "Elevação lateral na polia baixa (cabo)",
+                  "Elevação lateral inclinada no banco"
+                ],
+                "how": "Em pé ou sentado com leve inclinação do tronco à frente (10°). Halteres ao lado das coxas, cotovelos levemente destravados. Eleve os braços liderando pelo cotovelo (como se estivesse despejando uma jarra) até a altura dos ombros. Desça em 3s sem balançar o corpo."
+              }
+            ]
+          },
+          {
+            "name": "Tríceps",
+            "total": "6 séries",
+            "exercises": [
+              {
+                "name": "Tríceps testa",
+                "scheme": "3×8–12",
+                "target": "Cabeça longa e medial do tríceps — responsável pelo volume de braço visto de lado e de trás.",
+                "alts": [
+                  "Tríceps testa com halteres no banco",
+                  "Tríceps testa na polia baixa com corda",
+                  "Tríceps francês com halter"
+                ],
+                "how": "Deitado no banco reto, segure a barra W ou halteres acima do peito. Incline os braços ligeiramente para trás (em direção à cabeça). Flexione apenas os antebraços descendo a barra até a linha da testa/topo da cabeça e estenda sem mexer a posição do cotovelo."
+              },
+              {
+                "name": "Tríceps pulley com corda",
+                "scheme": "3×10–15",
+                "target": "Lateral / medial",
+                "advanced": "🔥 Drop-set na última",
+                "alts": [
+                  "Tríceps pulley com barra reta/V",
+                  "Tríceps na máquina articulada",
+                  "Tríceps mergulho entre bancos"
+                ],
+                "how": "Polia alta com corda. Cotovelos colados ao tronco. Empurre a corda para baixo e, no final do percurso, abra as pontas da corda para os lados travando o tríceps por 1 segundo. Volte até os antebraços passarem de 90°."
+              }
+            ]
+          }
+        ],
+        "division": "Push",
+        "muscles": "Peito + Ombros + Tríceps"
+      },
+      "ter": {
+        "label": "Terça",
+        "color": "ter",
         "title": "Pull A — Foco: Costas Puxadas (Largura V-Taper) + Bíceps",
         "note": "Dia de abrir a asa das costas! Todas as puxadas verticais para maximizar a largura e desenhar o V-Taper. Descanse 90-120s nas puxadas pesadas.",
         "groups": [
@@ -9321,6 +9876,31 @@ const DIVISION_INFO = {
       ]
     }
   },
+  "rec_pump": {
+    "description": "Variação de choque com Costas divididas por vetor (Puxadas na Terça / Remadas na Sexta) e treino conjugado de Bíceps e Tríceps juntos na Sexta-feira para máximo pump vascular antes do final de semana.",
+    "days": {
+      "seg": [
+        "Push A",
+        "Peito + Ombro lateral + Tríceps"
+      ],
+      "ter": [
+        "Pull A (Puxadas)",
+        "Costas (Largura / Puxadas) + Bíceps + Ombro posterior"
+      ],
+      "qua": [
+        "Legs & Core",
+        "Quadríceps + Posteriores + Glúteos + Panturrilhas + Abdômen Infra"
+      ],
+      "qui": [
+        "Push B",
+        "Peito Superior 2x + Ombro Lateral 3D + Abdômen"
+      ],
+      "sex": [
+        "Pull B & Arms Pump",
+        "Costas (Espessura / Remadas) + Bíceps & Tríceps Juntos"
+      ]
+    }
+  },
   "rec": {
     "description": "Push / Pull / Legs com ângulos e equipamentos diferentes entre as duas sessões de cada padrão (A e B), incluindo técnicas de intensidade pontuais. Push trabalha peito + ombros + tríceps; Pull, costas + bíceps + ombro posterior; um único dia de pernas.",
     "days": {
@@ -9633,7 +10213,7 @@ let currentCategoryFilter = 'all';
 function planMatchesFilter(planKey, filter){
   if(filter === 'all') return true;
   const p = PLANS[planKey];
-  if(filter === 'REC') return planKey === 'rec';
-  if(filter === 'A') return planKey === 'rec' || p.category === 'A';
+  if(filter === 'REC') return planKey === 'rec' || planKey === 'rec_pump';
+  if(filter === 'A') return planKey === 'rec' || planKey === 'rec_pump' || p.category === 'A';
   return p.category === filter;
 }

@@ -697,7 +697,7 @@ function renderPlanSwitch(){
   const wrap = document.getElementById('planSwitch');
   wrap.innerHTML = '';
   const isEmergency = (k) => k === 'em' || k === 'em4';
-  const isRecommended = (k) => k === 'rec';
+  const isRecommended = (k) => k === 'rec' || k === 'rec_pump';
   Object.keys(PLANS).filter(pk=>planMatchesCurrentFilters(pk)).forEach((planKey) => {
     const p = PLANS[planKey];
     const btn = document.createElement('button');
